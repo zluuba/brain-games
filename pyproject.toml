@@ -1,9 +1,11 @@
 [tool.poetry]
-name = "hexlet-code"
-version = "0.1.0"
-description = ""
-authors = ["zluuba <zluyba.nikitina@gmail.com>"]
+name = "hexlet-first-project"
+version = "0.1.1"
+description = "Сollection of mathematical games as the first project on Hexlet"
+license = "Proprietary"
+authors = ["Luybov Nikitina <zluyba.nikitina@gmail.com>"]
 readme = "README.md"
+repository = "https://github.com/zluuba/python-project-49"
 packages = [{include = "brain_games"}]
 
 [tool.poetry.scripts]
