@@ -1,5 +1,5 @@
 from brain_games.games.prime_game import prime_rule, prime_game
-from brain_games.games.body import welcome
+from brain_games.body import welcome
 
 
 def main():

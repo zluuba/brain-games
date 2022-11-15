@@ -1,5 +1,5 @@
 from brain_games.games.progression_game import progression_rule, progression
-from brain_games.games.body import welcome
+from brain_games.body import welcome
 
 
 def main():

@@ -1,10 +1,6 @@
 import prompt
 
 
-# def welcome_user():
-#     print('Welcome to the Brain Games!')
-
-
 def welcome():
     print('Welcome to the Brain Games!')
     global name

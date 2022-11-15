@@ -1,6 +1,6 @@
 import random
 from random import randint
-from brain_games.games.body import is_correct, lose, win
+from brain_games.body import is_correct, lose, win
 import prompt
 
 

@@ -1,5 +1,5 @@
 from brain_games.games.gcd_game import gcd_rule, greatest_cd
-from brain_games.games.body import welcome
+from brain_games.body import welcome
 
 
 def main():
