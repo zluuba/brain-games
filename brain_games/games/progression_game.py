@@ -1,32 +1,33 @@
 from random import randint
-from brain_games.games.body import *
+from brain_games.games.body import is_correct, lose, win
 import prompt
 
 
-def progression_game_rule():
+def progression_rule():
     print('What number is missing in the progression?')
 
 
 # showing digit progression with one hide digit
 def calculations():
-    first_digit = randint(1, 20)
+    first_num = randint(1, 20)
     step = randint(2, 6)
     list_volume = randint(5, 11)
-    hide_digit = randint(0, list_volume - 1)
-    digit_list = list(range(first_digit, first_digit + (list_volume * step), step))
-    calculations = str(digit_list[hide_digit])
-    digit_list[hide_digit] = '..'
-    global question
-    question = " ".join(map(str, digit_list))
-    return calculations
+    hide_char_index = randint(0, list_volume - 1)
+    last_num = first_num + (list_volume * step)
+
+    digit_list = list(range(first_num, last_num, step))
+    hide_digit = str(digit_list[hide_char_index])
+    digit_list[hide_char_index] = '..'
+    global question_list
+    question_list = " ".join(map(str, digit_list))
+    return hide_digit
 
 
 def progression():
-    global result, answer, correct
     i = 0
     while i < 3:
         result = calculations()
-        print(f'Question: {question}')
+        print(f'Question: {question_list}')
         answer = prompt.string('Your answer: ')
         correct = is_correct(answer, result)
         if correct:

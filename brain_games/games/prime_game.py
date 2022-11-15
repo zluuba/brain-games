@@ -1,9 +1,9 @@
 from random import randint
-from brain_games.games.body import *
+from brain_games.games.body import is_correct, lose, win
 import prompt
 
 
-def prime_game_rule():
+def prime_rule():
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
 
@@ -19,7 +19,6 @@ def calculations():
 
 
 def prime_game():
-    global result, answer, correct
     i = 0
     while i < 3:
         result = calculations()

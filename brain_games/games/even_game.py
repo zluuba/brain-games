@@ -1,25 +1,24 @@
 from random import randint
-from brain_games.games.body import *
+from brain_games.games.body import is_correct, lose, win
 import prompt
 
 
-def even_game_rule():
+def even_rule():
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
 
 def calculations():
-    calculations = ''
+    calculation = ''
     global number
     number = randint(1, 20)
     if number % 2 == 0:
-        calculations += 'yes'
+        calculation += 'yes'
     else:
-        calculations += 'no'
-    return calculations
+        calculation += 'no'
+    return calculation
 
 
 def is_even_game():
-    global result, answer, correct
     i = 0
     while i < 3:
         result = calculations()

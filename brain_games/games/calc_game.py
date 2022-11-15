@@ -1,10 +1,10 @@
 import random
 from random import randint
-from brain_games.games.body import *
+from brain_games.games.body import is_correct, lose, win
 import prompt
 
 
-def calc_game_rule():
+def calc_rule():
     print('What is the result of the expression?')
 
 
