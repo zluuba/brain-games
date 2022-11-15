@@ -1,12 +1,15 @@
-from brain_games.games.gcd_game import greatest_cd, welcome
+from brain_games.games.gcd_game import *
+from brain_games.games.body import *
 
 
 def gcd():
+    game_rule()
     greatest_cd()
 
 
 def main():
-    welcome()
+    welcome_user()
+    user_name()
     gcd()
 
 

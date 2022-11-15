@@ -1,46 +1,41 @@
 from random import randint
+from brain_games.games.body import *
 import prompt
 
 
-def welcome():
-    print('Welcome to the Brain Games!')
+def game_rule():
+    print('Find the greatest common divisor of given numbers.')
 
 
-def user_name():
-    name = prompt.string("May I have your name? ")
-    print(f'Hello, {name}!')
-    return name
-
-
-def gcd_question():
-    result = ''
+def calculations():
+    calculation = ''
     num1 = randint(1, 20)
     num2 = randint(1, 20)
-    print(num1, num2)
-    global answer
-    answer = prompt.string('Your answer: ')
+    global nums
+    nums = f'{num1} {num2}'
 
     while num1 != 0 and num2 != 0:
         if num1 > num2:
             num1 = num1 % num2
         else:
             num2 = num2 % num1
-        result = num1 + num2
-    return result
+        calculation = num1 + num2
+    return calculation
 
 
 def greatest_cd():
-    name = user_name()
-    print('Find the greatest common divisor of given numbers.')
+    global result, answer, correct
     i = 0
     while i < 3:
-        result = str(gcd_question())
-        if answer == result:
-            print('Correct!')
+        result = str(calculations())
+        print(f'Question: {nums}')
+        answer = prompt.string('Your answer: ')
+        correct = is_correct(answer, result)
+        if correct:
             i += 1
+            continue
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{result}'.")
-            print(f"Let's try again, {name}!")
+            lose()
             break
     else:
-        print(f'Congratulations, {name}!')
+        win()
