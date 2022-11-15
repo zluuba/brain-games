@@ -39,5 +39,4 @@ Now all games are available on these five commands:
 #### Prime Game:
 [![asciicast](https://asciinema.org/a/rELtozb3KeYL1sz5XDkqLyZhv.svg)](https://asciinema.org/a/rELtozb3KeYL1sz5XDkqLyZhv)
 
-#### From a Hexlet student with love.
-#### Enjoy! ʕ•ᴥ•ʔﾉ♡
+##### From a Hexlet student with love. Enjoy! ʕ•ᴥ•ʔﾉ♡
