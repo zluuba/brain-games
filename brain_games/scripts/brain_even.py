@@ -1,5 +1,5 @@
-from brain_games.games.even_game import *
-from brain_games.games.body import *
+from brain_games.games.even_game import game_rule, is_even_game
+from brain_games.games.body import welcome_user, user_name
 
 
 def is_even():

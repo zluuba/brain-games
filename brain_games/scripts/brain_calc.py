@@ -1,5 +1,5 @@
-from brain_games.games.calc_game import *
-from brain_games.games.body import *
+from brain_games.games.calc_game import game_rule, calculator
+from brain_games.games.body import welcome_user, user_name
 
 
 def calc():

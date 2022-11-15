@@ -1,5 +1,5 @@
-from brain_games.games.progression_game import *
-from brain_games.games.body import *
+from brain_games.games.progression_game import game_rule, progression
+from brain_games.games.body import welcome_user, user_name
 
 
 def progression_game():
