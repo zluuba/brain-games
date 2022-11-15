@@ -1,50 +1,36 @@
 from random import randint
+from brain_games.games.body import *
 import prompt
 
 
-def welcome_user():
-    print('Welcome to the Brain Games!')
+def game_rule():
+    print('Answer "yes" if the number is even, otherwise answer "no".')
 
 
-def user_name():
-    name = prompt.string("May I have your name? ")
-    print(f'Hello, {name}!')
-    return name
-
-
-def question():
-    global random_number
-    random_number = randint(1, 1000)
-    print(f'Question: {random_number}')
-    global answer
-    answer = prompt.string('Your answer: ')
-
-
-def true_answer():
-    opposite_answer = ''
-    if random_number % 2 == 0:
-        opposite_answer += 'yes'
+def calculations():
+    calculations = ''
+    global number
+    number = randint(1, 20)
+    if number % 2 == 0:
+        calculations += 'yes'
     else:
-        opposite_answer += 'no'
-    return opposite_answer
+        calculations += 'no'
+    return calculations
 
 
 def is_even_game():
-    welcome_user()
-    name = user_name()
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    global result, answer, correct
     i = 0
     while i < 3:
-        question()
-        if answer == 'yes' and random_number % 2 == 0:
-            print('Correct!')
+        result = calculations()
+        print(f'Question: {number}')
+        answer = prompt.string('Your answer: ')
+        correct = is_correct(answer, result)
+        if correct:
             i += 1
-        elif answer == 'no' and random_number % 2 != 0:
-            print('Correct!')
-            i += 1
+            continue
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{true_answer()}'.")
-            print(f"Let's try again, {name}!")
+            lose()
             break
     else:
-        print(f'Congratulations, {name}!')
+        win()
