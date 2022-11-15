@@ -3,7 +3,7 @@ from brain_games.games.body import *
 import prompt
 
 
-def game_rule():
+def even_game_rule():
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
 

@@ -4,7 +4,7 @@ from brain_games.games.body import *
 import prompt
 
 
-def game_rule():
+def calc_game_rule():
     print('What is the result of the expression?')
 
 
@@ -13,8 +13,8 @@ def calculations():
     num2 = randint(1, 25)
     operators = ['+', '-', '*']
     operator = random.choice(operators)
-    global a
-    a = f'{num1} {operator} {num2}'
+    global question
+    question = f'{num1} {operator} {num2}'
 
     if operator == "+":
         calculation = num1 + num2
@@ -30,7 +30,7 @@ def calculator():
     i = 0
     while i < 3:
         result = str(calculations())
-        print(f'Question: {a}')
+        print(f'Question: {question}')
         answer = prompt.string('Your answer: ')
         correct = is_correct(answer, result)
         if correct:

@@ -3,7 +3,7 @@ from brain_games.games.body import *
 import prompt
 
 
-def game_rule():
+def progression_game_rule():
     print('What number is missing in the progression?')
 
 
@@ -16,8 +16,8 @@ def calculations():
     digit_list = list(range(first_digit, first_digit + (list_volume * step), step))
     calculations = str(digit_list[hide_digit])
     digit_list[hide_digit] = '..'
-    global l
-    l = " ".join(map(str, digit_list))
+    global question
+    question = " ".join(map(str, digit_list))
     return calculations
 
 
@@ -26,7 +26,7 @@ def progression():
     i = 0
     while i < 3:
         result = calculations()
-        print(f'Question: {l}')
+        print(f'Question: {question}')
         answer = prompt.string('Your answer: ')
         correct = is_correct(answer, result)
         if correct:
