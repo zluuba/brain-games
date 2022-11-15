@@ -1,10 +1,9 @@
 from brain_games.games.even_game import even_rule, is_even_game
-from brain_games.games.body import welcome_user, user_name
+from brain_games.games.body import welcome
 
 
 def main():
-    welcome_user()
-    user_name()
+    welcome()
     even_rule()
     is_even_game()
 

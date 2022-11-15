@@ -1,10 +1,9 @@
 from brain_games.games.prime_game import prime_rule, prime_game
-from brain_games.games.body import welcome_user, user_name
+from brain_games.games.body import welcome
 
 
 def main():
-    welcome_user()
-    user_name()
+    welcome()
     prime_rule()
     prime_game()
 

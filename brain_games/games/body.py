@@ -1,11 +1,12 @@
 import prompt
 
 
-def welcome_user():
+# def welcome_user():
+#     print('Welcome to the Brain Games!')
+
+
+def welcome():
     print('Welcome to the Brain Games!')
-
-
-def user_name():
     global name
     name = prompt.string("May I have your name? ")
     print(f'Hello, {name}!')

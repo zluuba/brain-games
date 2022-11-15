@@ -1,10 +1,9 @@
 from brain_games.games.gcd_game import gcd_rule, greatest_cd
-from brain_games.games.body import welcome_user, user_name
+from brain_games.games.body import welcome
 
 
 def main():
-    welcome_user()
-    user_name()
+    welcome()
     gcd_rule()
     greatest_cd()
 
