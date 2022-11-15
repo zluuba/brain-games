@@ -11,3 +11,6 @@
 
 ### GreatestCommonDivisor Game:
 [![asciicast](https://asciinema.org/a/ycL4JyR4DCvFapuTOwaEMAhYu.svg)](https://asciinema.org/a/ycL4JyR4DCvFapuTOwaEMAhYu)
+
+### Progression Game:
+[![asciicast](https://asciinema.org/a/PBE94ttXoDZKKZ4EcT5A3vaC7.svg)](https://asciinema.org/a/PBE94ttXoDZKKZ4EcT5A3vaC7)
