@@ -1,48 +1,43 @@
 import random
 from random import randint
+from brain_games.games.body import *
 import prompt
 
 
-def welcome():
-    print('Welcome to the Brain Games!')
+def game_rule():
+    print('What is the result of the expression?')
 
 
-def user_name():
-    name = prompt.string("May I have your name? ")
-    print(f'Hello, {name}!')
-    return name
-
-
-def calc_question():
+def calculations():
+    num1 = randint(1, 25)
+    num2 = randint(1, 25)
     operators = ['+', '-', '*']
-    num1 = randint(1, 50)
-    num2 = randint(1, 50)
     operator = random.choice(operators)
-    print(num1, operator, num2)
-    global answer
-    answer = prompt.string('Your answer: ')
+    global a
+    a = f'{num1} {operator} {num2}'
 
     if operator == "+":
-        result = num1 + num2
+        calculation = num1 + num2
     elif operator == "-":
-        result = num1 - num2
+        calculation = num1 - num2
     else:
-        result = num1 * num2
-    return result
+        calculation = num1 * num2
+    return calculation
 
 
 def calculator():
-    name = user_name()
-    print('What is the result of the expression?')
+    global result, answer, correct
     i = 0
     while i < 3:
-        result = str(calc_question())
-        if answer == result:
-            print('Correct!')
+        result = str(calculations())
+        print(f'Question: {a}')
+        answer = prompt.string('Your answer: ')
+        correct = is_correct(answer, result)
+        if correct:
             i += 1
+            continue
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{result}'.")
-            print(f"Let's try again, {name}!")
+            lose()
             break
     else:
-        print(f'Congratulations, {name}!')
+        win()
