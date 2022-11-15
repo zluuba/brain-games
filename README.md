@@ -4,16 +4,18 @@
 ## How to install and play
 
 ### Even Game:
-[![asciicast](https://asciinema.org/a/czXe8Qba7zYxDJugwpKTtRgMG.svg)](https://asciinema.org/a/czXe8Qba7zYxDJugwpKTtRgMG)
+[![asciicast](https://asciinema.org/a/h6cIIpEGMbiNajL8XJ02GrOPX.svg)](https://asciinema.org/a/h6cIIpEGMbiNajL8XJ02GrOPX)
 
 ### Calculator Game:
-[![asciicast](https://asciinema.org/a/Py5H3qA1l6nt21vKvbyo8JB4s.svg)](https://asciinema.org/a/Py5H3qA1l6nt21vKvbyo8JB4s)
+[![asciicast](https://asciinema.org/a/H00VVTCBDKfmdu3LVuOQPEMza.svg)](https://asciinema.org/a/H00VVTCBDKfmdu3LVuOQPEMza)
 
 ### GreatestCommonDivisor Game:
-[![asciicast](https://asciinema.org/a/ycL4JyR4DCvFapuTOwaEMAhYu.svg)](https://asciinema.org/a/ycL4JyR4DCvFapuTOwaEMAhYu)
+[![asciicast](https://asciinema.org/a/hgcLbeJ0WcWTQIHewflnZrFGQ.svg)](https://asciinema.org/a/hgcLbeJ0WcWTQIHewflnZrFGQ)
 
 ### Progression Game:
 [![asciicast](https://asciinema.org/a/PBE94ttXoDZKKZ4EcT5A3vaC7.svg)](https://asciinema.org/a/PBE94ttXoDZKKZ4EcT5A3vaC7)
 
 ### Prime Game:
 [![asciicast](https://asciinema.org/a/rELtozb3KeYL1sz5XDkqLyZhv.svg)](https://asciinema.org/a/rELtozb3KeYL1sz5XDkqLyZhv)
+
+## Enjoy! ʕ•ᴥ•ʔﾉ♡
