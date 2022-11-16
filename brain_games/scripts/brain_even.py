@@ -1,8 +1,7 @@
-from brain_games.games.even_game import even_welcome, is_even_game
+from brain_games.games.even_game import is_even_game
 
 
 def main_even():
-    even_welcome()
     is_even_game()
 
 

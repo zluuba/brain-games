@@ -1,10 +1,9 @@
-from brain_games.games.gcd_game import gcd_welcome, greatest_cd
+from brain_games.games.gcd_game import greatest_cd
 
 
-def main():
-    gcd_welcome()
+def main_gcd():
     greatest_cd()
 
 
 if __name__ == '__main__':
-    main()
+    main_gcd()
