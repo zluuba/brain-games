@@ -2,11 +2,11 @@ from brain_games.games.gcd_game import gcd_rule, greatest_cd
 from brain_games.body import welcome
 
 
-def main():
+def qcd_main():
     welcome()
     gcd_rule()
     greatest_cd()
 
 
 if __name__ == '__main__':
-    main()
+    qcd_main()
