@@ -12,10 +12,10 @@ def gcd_welcome():
 
 
 def get_gcd_result():
-    global expression
+    global numbers
     num1 = randint(1, 20)
     num2 = randint(1, 20)
-    expression = f'{num1} {num2}'
+    numbers = f'{num1} {num2}'
     while num1 != 0 and num2 != 0:
         if num1 > num2:
             num1 = num1 % num2
@@ -29,7 +29,7 @@ def greatest_cd():
     count = 0
     while count < 3:
         result = str(get_gcd_result())
-        answer = question(expression)
+        answer = question(numbers)
         correct = is_correct(answer, result)
         if correct:
             count += 1

@@ -12,11 +12,11 @@ def prime_welcome():
 
 
 def get_prime_result():
-    global expression
-    expression = randint(2, 100)
+    global number
+    number = randint(2, 100)
     divider = 2
-    while divider <= expression / 2:
-        if expression % divider == 0:
+    while divider <= number / 2:
+        if number % divider == 0:
             return 'no'
         divider += 1
     return 'yes'
@@ -26,7 +26,7 @@ def prime_game():
     count = 0
     while count < 3:
         result = get_prime_result()
-        answer = question(expression)
+        answer = question(number)
         correct = is_correct(answer, result)
         if correct:
             count += 1

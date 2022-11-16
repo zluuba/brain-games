@@ -27,8 +27,8 @@ def get_progression_result():
     final_progression[hide_char_index] = '..'
 
     # create progression what user see
-    global expression
-    expression = " ".join(map(str, final_progression))
+    global progression_expression
+    progression_expression = " ".join(map(str, final_progression))
 
     return hide_digit
 
@@ -37,7 +37,7 @@ def progression():
     count = 0
     while count < 3:
         result = get_progression_result()
-        answer = question(expression)
+        answer = question(progression_expression)
         correct = is_correct(answer, result)
         if correct:
             count += 1
