@@ -1,14 +1,9 @@
 from random import randint
-from brain_games.body import welcome_user, question, is_correct, lose, win
+from brain_games.games_body import body
 
 
 def prime_rule():
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
-
-
-def prime_welcome():
-    welcome_user()
-    prime_rule()
 
 
 def get_prime_result():
@@ -22,17 +17,18 @@ def get_prime_result():
     return 'yes'
 
 
-def prime_game():
+def get_prime_lists():
+    questions_prime_list = []
+    results_prime_list = []
     count = 0
     while count < 3:
         result = get_prime_result()
-        answer = question(number)
-        correct = is_correct(answer, result)
-        if correct:
-            count += 1
-            continue
-        else:
-            lose()
-            break
-    else:
-        win()
+        questions_prime_list.append(number)
+        results_prime_list.append(str(result))
+        count += 1
+    return questions_prime_list, results_prime_list
+
+
+def prime_game():
+    questions_prime_list, results_prime_list = get_prime_lists()
+    body(prime_rule, questions_prime_list, results_prime_list)

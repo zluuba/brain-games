@@ -1,14 +1,9 @@
 from random import randint
-from brain_games.body import welcome_user, question, is_correct, lose, win
+from brain_games.games_body import body
 
 
 def progression_rule():
     print('What number is missing in the progression?')
-
-
-def progression_welcome():
-    welcome_user()
-    progression_rule()
 
 
 def get_progression_result():
@@ -33,17 +28,18 @@ def get_progression_result():
     return hide_digit
 
 
-def progression():
+def get_progression_lists():
+    questions_progression_list = []
+    results_progression_list = []
     count = 0
     while count < 3:
         result = get_progression_result()
-        answer = question(progression_expression)
-        correct = is_correct(answer, result)
-        if correct:
-            count += 1
-            continue
-        else:
-            lose()
-            break
-    else:
-        win()
+        questions_progression_list.append(progression_expression)
+        results_progression_list.append(str(result))
+        count += 1
+    return questions_progression_list, results_progression_list
+
+
+def progression():
+    questions_list, results_list = get_progression_lists()
+    body(progression_rule, questions_list, results_list)

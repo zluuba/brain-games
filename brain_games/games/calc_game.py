@@ -1,18 +1,13 @@
 import random
 from random import randint
-from brain_games.body import welcome_user, question, is_correct, lose, win
+from brain_games.games_body import body
 
 
 def calc_rule():
     print('What is the result of the expression?')
 
 
-def calc_welcome():
-    welcome_user()
-    calc_rule()
-
-
-def get_expression():
+def get_math_expression():
     global num1, num2, operator, expression
     num1 = randint(1, 25)
     num2 = randint(1, 25)
@@ -21,8 +16,8 @@ def get_expression():
     expression = f'{num1} {operator} {num2}'
 
 
-def get_calc_result():
-    get_expression()
+def get_math_expression_result():
+    get_math_expression()
     if operator == "+":
         result_int = num1 + num2
     elif operator == "-":
@@ -32,17 +27,18 @@ def get_calc_result():
     return result_int
 
 
-def calculator():
+def get_calc_lists():
+    questions_calc_list = []
+    results_calc_list = []
     count = 0
     while count < 3:
-        result = str(get_calc_result())
-        answer = question(expression)
-        correct = is_correct(answer, result)
-        if correct:
-            count += 1
-            continue
-        else:
-            lose()
-            break
-    else:
-        win()
+        result = get_math_expression_result()
+        questions_calc_list.append(expression)
+        results_calc_list.append(str(result))
+        count += 1
+    return questions_calc_list, results_calc_list
+
+
+def calculator():
+    questions_list, results_list = get_calc_lists()
+    body(calc_rule, questions_list, results_list)

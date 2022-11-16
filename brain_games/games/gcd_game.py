@@ -1,20 +1,15 @@
 from random import randint
-from brain_games.body import welcome_user, question, is_correct, lose, win
+from brain_games.games_body import body
 
 
 def gcd_rule():
     print('Find the greatest common divisor of given numbers.')
 
 
-def gcd_welcome():
-    welcome_user()
-    gcd_rule()
-
-
 def get_gcd_result():
     global numbers
-    num1 = randint(1, 20)
-    num2 = randint(1, 20)
+    num1 = randint(1, 25)
+    num2 = randint(1, 25)
     numbers = f'{num1} {num2}'
     while num1 != 0 and num2 != 0:
         if num1 > num2:
@@ -25,17 +20,18 @@ def get_gcd_result():
     return pre_result
 
 
-def greatest_cd():
+def get_gsd_lists():
+    questions_gcd_list = []
+    results_gcd_list = []
     count = 0
     while count < 3:
-        result = str(get_gcd_result())
-        answer = question(numbers)
-        correct = is_correct(answer, result)
-        if correct:
-            count += 1
-            continue
-        else:
-            lose()
-            break
-    else:
-        win()
+        result = get_gcd_result()
+        questions_gcd_list.append(numbers)
+        results_gcd_list.append(str(result))
+        count += 1
+    return questions_gcd_list, results_gcd_list
+
+
+def greatest_cd():
+    questions_gcd_list, results_gcd_list = get_gsd_lists()
+    body(gcd_rule, questions_gcd_list, results_gcd_list)
