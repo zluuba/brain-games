@@ -12,9 +12,9 @@ packages = [{include = "brain_games"}]
 brain-games = "brain_games.scripts.brain_games:main"
 brain-even = "brain_games.scripts.brain_even:main_even"
 brain-calc = "brain_games.scripts.brain_calc:main_calc"
-brain-gcd = "brain_games.scripts.brain_gcd:main"
+brain-gcd = "brain_games.scripts.brain_gcd:main_gcd"
 brain-progression = "brain_games.scripts.brain_progression:main"
-brain-prime = "brain_games.scripts.brain_prime:main"
+brain-prime = "brain_games.scripts.brain_prime:main_prime"
 
 [tool.poetry.dependencies]
 python = "^3.10"
