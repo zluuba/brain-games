@@ -18,15 +18,15 @@ def get_prime_result():
 
 
 def get_prime_lists():
-    questions_prime_list = []
-    results_prime_list = []
     count = 0
+    prime_questions_list = []
+    prime_results_list = []
     while count < 3:
         result = get_prime_result()
-        questions_prime_list.append(number)
-        results_prime_list.append(str(result))
+        prime_questions_list.append(number)
+        prime_results_list.append(str(result))
         count += 1
-    return questions_prime_list, results_prime_list
+    return prime_questions_list, prime_results_list
 
 
 def prime_game():
