@@ -2,12 +2,10 @@
 [![Actions Status](https://github.com/zluuba/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/zluuba/python-project-49/actions) <a href="https://codeclimate.com/github/zluuba/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/8f30055514168a104cb1/maintainability" /></a>
 
 
-## Welcome
-Welcome to the Brain Games! <br />
-This project includes five math games: "Parity Check", "Calculator", "Greatest Common Divisor", "Arithmetic Progression" and "Is it a Simple Number?". <br />
+### Welcome to the Brain Games
+This project includes five math games: "Parity Check", "Calculator", "Greatest Common Divisor", "Arithmetic Progression" and "Is it a Simple Number?".
 All games are started and played using the terminal. <br />
-<br />
-[Эта страница на русском](https://github.com/zluuba/python-project-49#%D0%B4%D0%BE%D0%B1%D1%80%D0%BE-%D0%BF%D0%BE%D0%B6%D0%B0%D0%BB%D0%BE%D0%B2%D0%B0%D1%82%D1%8C)
+[перейти к русскому языку](https://github.com/zluuba/python-project-49#%D0%B8%D0%B3%D1%80%D1%8B-%D1%80%D0%B0%D0%B7%D1%83%D0%BC%D0%B0)
 
 ### Requirements
 - [python](https://www.python.org/), version 3.10 or higher
