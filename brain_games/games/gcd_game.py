@@ -11,7 +11,7 @@ def gcd_welcome():
     gcd_rule()
 
 
-def get_result():
+def get_gcd_result():
     global expression
     num1 = randint(1, 20)
     num2 = randint(1, 20)
@@ -28,7 +28,7 @@ def get_result():
 def greatest_cd():
     count = 0
     while count < 3:
-        result = str(get_result())
+        result = str(get_gcd_result())
         answer = question(expression)
         correct = is_correct(answer, result)
         if correct:

@@ -11,7 +11,7 @@ def progression_welcome():
     progression_rule()
 
 
-def get_result():
+def get_progression_result():
     # create simple variables for future calculation
     first_num = randint(1, 20)
     step = randint(2, 6)
@@ -36,7 +36,7 @@ def get_result():
 def progression():
     count = 0
     while count < 3:
-        result = get_result()
+        result = get_progression_result()
         answer = question(expression)
         correct = is_correct(answer, result)
         if correct:

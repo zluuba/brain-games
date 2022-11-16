@@ -21,7 +21,7 @@ def get_expression():
     expression = f'{num1} {operator} {num2}'
 
 
-def get_result():
+def get_calc_result():
     get_expression()
     if operator == "+":
         result_int = num1 + num2
@@ -35,7 +35,7 @@ def get_result():
 def calculator():
     count = 0
     while count < 3:
-        result = str(get_result())
+        result = str(get_calc_result())
         answer = question(expression)
         correct = is_correct(answer, result)
         if correct:

@@ -11,7 +11,7 @@ def even_welcome():
     even_rule()
 
 
-def get_result():
+def get_even_result():
     global expression
     expression = randint(1, 25)
     return expression % 2 == 0 and 'yes' or 'no'
@@ -20,7 +20,7 @@ def get_result():
 def is_even_game():
     count = 0
     while count < 3:
-        result = get_result()
+        result = get_even_result()
         answer = question(expression)
         correct = is_correct(answer, result)
         if correct:

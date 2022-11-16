@@ -11,7 +11,7 @@ def prime_welcome():
     prime_rule()
 
 
-def calculations():
+def get_prime_result():
     global expression
     expression = randint(2, 100)
     divider = 2
@@ -25,7 +25,7 @@ def calculations():
 def prime_game():
     count = 0
     while count < 3:
-        result = calculations()
+        result = get_prime_result()
         answer = question(expression)
         correct = is_correct(answer, result)
         if correct:
