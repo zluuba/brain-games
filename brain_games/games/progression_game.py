@@ -29,14 +29,14 @@ def get_progression_result():
 
 
 def get_progression_lists():
-    results_progression_list = []
     questions_progression_list = []
-    counter = 0
-    while counter < 3:
+    results_progression_list = []
+    count = 0
+    while count < 3:
         result = get_progression_result()
         questions_progression_list.append(progression_expression)
         results_progression_list.append(str(result))
-        counter += 1
+        count += 1
     return questions_progression_list, results_progression_list
 
 

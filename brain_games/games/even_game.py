@@ -21,14 +21,14 @@ def get_result():
 
 
 def get_even_lists():
+    counter = 1
     questions_even_list = []
     results_even_list = []
-    count = 0
-    while count < 3:
+    while counter <= 3:
         result = get_result()
         questions_even_list.append(number)
         results_even_list.append(str(result))
-        count += 1
+        counter += 1
     return questions_even_list, results_even_list
 
 
