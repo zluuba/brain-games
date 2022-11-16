@@ -1,6 +1,5 @@
-import prompt
 from random import randint
-from brain_games.body import welcome_user, is_correct, lose, win
+from brain_games.body import welcome_user, question, is_correct, lose, win
 
 
 def gcd_rule():
@@ -12,31 +11,28 @@ def gcd_welcome():
     gcd_rule()
 
 
-def calculations():
-    calculation = ''
+def get_result():
+    global expression
     num1 = randint(1, 20)
     num2 = randint(1, 20)
-    global question_nums
-    question_nums = f'{num1} {num2}'
-
+    expression = f'{num1} {num2}'
     while num1 != 0 and num2 != 0:
         if num1 > num2:
             num1 = num1 % num2
         else:
             num2 = num2 % num1
-        calculation = num1 + num2
-    return calculation
+    pre_result = num1 + num2
+    return pre_result
 
 
 def greatest_cd():
-    i = 0
-    while i < 3:
-        result = str(calculations())
-        print(f'Question: {question_nums}')
-        answer = prompt.string('Your answer: ')
+    count = 0
+    while count < 3:
+        result = str(get_result())
+        answer = question(expression)
         correct = is_correct(answer, result)
         if correct:
-            i += 1
+            count += 1
             continue
         else:
             lose()

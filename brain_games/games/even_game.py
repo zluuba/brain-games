@@ -1,6 +1,5 @@
-import prompt
 from random import randint
-from brain_games.body import welcome_user, is_correct, lose, win
+from brain_games.body import welcome_user, question, is_correct, lose, win
 
 
 def even_rule():
@@ -12,26 +11,20 @@ def even_welcome():
     even_rule()
 
 
-def calculations():
-    calculation = ''
-    global number
-    number = randint(1, 20)
-    if number % 2 == 0:
-        calculation += 'yes'
-    else:
-        calculation += 'no'
-    return calculation
+def get_result():
+    global expression
+    expression = randint(1, 25)
+    return expression % 2 == 0 and 'yes' or 'no'
 
 
 def is_even_game():
-    i = 0
-    while i < 3:
-        result = calculations()
-        print(f'Question: {number}')
-        answer = prompt.string('Your answer: ')
+    count = 0
+    while count < 3:
+        result = get_result()
+        answer = question(expression)
         correct = is_correct(answer, result)
         if correct:
-            i += 1
+            count += 1
             continue
         else:
             lose()

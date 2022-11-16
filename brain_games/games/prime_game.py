@@ -1,6 +1,5 @@
-import prompt
 from random import randint
-from brain_games.body import welcome_user, is_correct, lose, win
+from brain_games.body import welcome_user, question, is_correct, lose, win
 
 
 def prime_rule():
@@ -13,25 +12,24 @@ def prime_welcome():
 
 
 def calculations():
-    global number
-    number = randint(2, 100)
+    global expression
+    expression = randint(2, 100)
     divider = 2
-    while divider <= number / 2:
-        if number % divider == 0:
+    while divider <= expression / 2:
+        if expression % divider == 0:
             return 'no'
         divider += 1
     return 'yes'
 
 
 def prime_game():
-    i = 0
-    while i < 3:
+    count = 0
+    while count < 3:
         result = calculations()
-        print(f'Question: {number}')
-        answer = prompt.string('Your answer: ')
+        answer = question(expression)
         correct = is_correct(answer, result)
         if correct:
-            i += 1
+            count += 1
             continue
         else:
             lose()

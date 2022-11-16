@@ -8,6 +8,11 @@ def welcome_user():
     print(f'Hello, {name}!')
 
 
+def question(expression):
+    print(f'Question: {expression}')
+    return prompt.string('Your answer: ')
+
+
 def is_correct(answer, result):
     if answer == result:
         print('Correct!')

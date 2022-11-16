@@ -1,7 +1,6 @@
-import prompt
 import random
 from random import randint
-from brain_games.body import welcome_user, is_correct, lose, win
+from brain_games.body import welcome_user, question, is_correct, lose, win
 
 
 def calc_rule():
@@ -13,32 +12,34 @@ def calc_welcome():
     calc_rule()
 
 
-def calculations():
+def get_expression():
+    global num1, num2, operator, expression
     num1 = randint(1, 25)
     num2 = randint(1, 25)
     operators = ['+', '-', '*']
     operator = random.choice(operators)
-    global question
-    question = f'{num1} {operator} {num2}'
+    expression = f'{num1} {operator} {num2}'
 
+
+def get_result():
+    get_expression()
     if operator == "+":
-        calculation = num1 + num2
+        result_int = num1 + num2
     elif operator == "-":
-        calculation = num1 - num2
+        result_int = num1 - num2
     else:
-        calculation = num1 * num2
-    return calculation
+        result_int = num1 * num2
+    return result_int
 
 
 def calculator():
-    i = 0
-    while i < 3:
-        result = str(calculations())
-        print(f'Question: {question}')
-        answer = prompt.string('Your answer: ')
+    count = 0
+    while count < 3:
+        result = str(get_result())
+        answer = question(expression)
         correct = is_correct(answer, result)
         if correct:
-            i += 1
+            count += 1
             continue
         else:
             lose()
