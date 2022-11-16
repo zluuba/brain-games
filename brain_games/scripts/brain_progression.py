@@ -1,10 +1,8 @@
-from brain_games.games.progression_game import progression_rule, progression
-from brain_games.body import welcome
+from brain_games.games.progression_game import progression_welcome_game, progression
 
 
 def main():
-    welcome()
-    progression_rule()
+    progression_welcome_game()
     progression()
 
 
