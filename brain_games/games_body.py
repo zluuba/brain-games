@@ -31,7 +31,7 @@ def lose():
     print(f"Let's try again, {name}!")
 
 
-def game_body(rule, expressions, results):
+def body(rule, expressions, results):
     welcome_user(rule)
     count = 0
     while count < 3:
