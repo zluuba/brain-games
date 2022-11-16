@@ -1,8 +1,8 @@
-from brain_games.games.prime_game import prime_welcome_game, prime_game
+from brain_games.games.prime_game import prime_welcome, prime_game
 
 
 def main():
-    prime_welcome_game()
+    prime_welcome()
     prime_game()
 
 

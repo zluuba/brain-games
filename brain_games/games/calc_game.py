@@ -8,7 +8,7 @@ def calc_rule():
     print('What is the result of the expression?')
 
 
-def calc_welcome_game():
+def calc_welcome():
     welcome_user()
     calc_rule()
 

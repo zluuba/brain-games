@@ -1,8 +1,8 @@
-from brain_games.games.calc_game import calc_welcome_game, calculator
+from brain_games.games.calc_game import calc_welcome, calculator
 
 
 def main():
-    calc_welcome_game()
+    calc_welcome()
     calculator()
 
 

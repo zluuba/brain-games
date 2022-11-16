@@ -1,8 +1,8 @@
-from brain_games.games.progression_game import progression_welcome_game, progression
+from brain_games.games.progression_game import progression_welcome, progression
 
 
 def main():
-    progression_welcome_game()
+    progression_welcome()
     progression()
 
 

@@ -7,7 +7,7 @@ def gcd_rule():
     print('Find the greatest common divisor of given numbers.')
 
 
-def gcd_welcome_game():
+def gcd_welcome():
     welcome_user()
     gcd_rule()
 

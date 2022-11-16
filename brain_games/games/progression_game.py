@@ -7,7 +7,7 @@ def progression_rule():
     print('What number is missing in the progression?')
 
 
-def progression_welcome_game():
+def progression_welcome():
     welcome_user()
     progression_rule()
 

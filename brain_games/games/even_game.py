@@ -7,7 +7,7 @@ def even_rule():
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
 
-def even_welcome_game():
+def even_welcome():
     welcome_user()
     even_rule()
 
