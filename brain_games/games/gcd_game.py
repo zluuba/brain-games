@@ -1,10 +1,15 @@
-from random import randint
-from brain_games.body import is_correct, lose, win
 import prompt
+from random import randint
+from brain_games.body import welcome_user, is_correct, lose, win
 
 
 def gcd_rule():
     print('Find the greatest common divisor of given numbers.')
+
+
+def gcd_welcome_game():
+    welcome_user()
+    gcd_rule()
 
 
 def calculations():

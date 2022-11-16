@@ -1,11 +1,16 @@
+import prompt
 import random
 from random import randint
-from brain_games.body import is_correct, lose, win
-import prompt
+from brain_games.body import welcome_user, is_correct, lose, win
 
 
 def calc_rule():
     print('What is the result of the expression?')
+
+
+def calc_welcome_game():
+    welcome_user()
+    calc_rule()
 
 
 def calculations():
@@ -26,7 +31,6 @@ def calculations():
 
 
 def calculator():
-    global result, answer, correct
     i = 0
     while i < 3:
         result = str(calculations())

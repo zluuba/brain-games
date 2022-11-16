@@ -1,10 +1,15 @@
-from random import randint
-from brain_games.body import is_correct, lose, win
 import prompt
+from random import randint
+from brain_games.body import welcome_user, is_correct, lose, win
 
 
 def even_rule():
     print('Answer "yes" if the number is even, otherwise answer "no".')
+
+
+def even_welcome_game():
+    welcome_user()
+    even_rule()
 
 
 def calculations():

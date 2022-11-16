@@ -1,10 +1,15 @@
-from random import randint
-from brain_games.body import is_correct, lose, win
 import prompt
+from random import randint
+from brain_games.body import welcome_user, is_correct, lose, win
 
 
 def progression_rule():
     print('What number is missing in the progression?')
+
+
+def progression_welcome_game():
+    welcome_user()
+    progression_rule()
 
 
 # showing digit progression with one hide digit

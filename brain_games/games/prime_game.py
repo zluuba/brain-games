@@ -1,10 +1,15 @@
-from random import randint
-from brain_games.body import is_correct, lose, win
 import prompt
+from random import randint
+from brain_games.body import welcome_user, is_correct, lose, win
 
 
 def prime_rule():
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
+
+
+def prime_welcome_game():
+    welcome_user()
+    prime_rule()
 
 
 def calculations():
