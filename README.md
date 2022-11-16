@@ -6,7 +6,7 @@
 This project includes five math games: "Parity Check", "Calculator", "Greatest Common Divisor", "Arithmetic Progression" and "Is it a Simple Number?". <br />
 All games are started and played using the terminal. <br />
 <br />
-[Эта страница на русском]()
+[Эта страница на русском](https://github.com/zluuba/python-project-49/edit/main/README.md#%D0%B4%D0%BE%D0%B1%D1%80%D0%BE-%D0%BF%D0%BE%D0%B6%D0%B0%D0%BB%D0%BE%D0%B2%D0%B0%D1%82%D1%8C)
 
 ### Requirements
 - [python](https://www.python.org/), version 3.10 or higher
@@ -60,5 +60,7 @@ Now all games are available on these five commands:
 3. "brain-gcd" - игра "Наибольший общий делитель". Даются два числа, нужно вычислить наибольший общий делитель и записать его. [Подробнее о НОД](https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D0%B8%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B8%D0%B9_%D0%BE%D0%B1%D1%89%D0%B8%D0%B9_%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D1%8C)
 4. "brain-progression" - игра "Арифметическая прогрессия". Даётся последовательность из чисел, в которой одно число спрятано, нужно ввести недостающее число.
 5. "brain-prime" - игра "Простое ли число?". Дается число, нужно ввести "yes", если число простое, если нет, ввести "no". [Подробнее о простых числах](https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B5_%D1%87%D0%B8%D1%81%D0%BB%D0%BE)
+
+[Примеры запусков игр](https://github.com/zluuba/python-project-49/edit/main/README.md#install-and-play-demos)
 
 -------
