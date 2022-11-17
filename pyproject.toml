@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = "Сollection of mathematical games"
+description = "Brain Games: collection of math games"
 license = "Proprietary"
 authors = ["Luybov Nikitina <zluyba.nikitina@gmail.com>"]
 readme = "README.md"
@@ -13,7 +13,7 @@ brain-games = "brain_games.scripts.brain_games:main"
 brain-even = "brain_games.scripts.brain_even:main_even"
 brain-calc = "brain_games.scripts.brain_calc:main_calc"
 brain-gcd = "brain_games.scripts.brain_gcd:main_gcd"
-brain-progression = "brain_games.scripts.brain_progression:main"
+brain-progression = "brain_games.scripts.brain_progression:main_progression"
 brain-prime = "brain_games.scripts.brain_prime:main_prime"
 
 [tool.poetry.dependencies]
