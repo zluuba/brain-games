@@ -22,6 +22,8 @@ Now all games are available on these five commands:
 4. "brain-progression" - "Arithmetic Progression" game. Is given an arithmetic sequence in which one number is hidden, you must enter the missing number.
 5. "brain-prime" - "Is it a Simple Number?" game. Is a number on the screen, you must enter "yes" if the number is prime and "no" if it's not. [More about prime numbers](https://en.wikipedia.org/wiki/Prime_number)
 
+<hr>
+
 ### Install and play. Demos:
 
 #### Even Game:
@@ -39,12 +41,10 @@ Now all games are available on these five commands:
 #### Prime Game:
 [![asciicast](https://asciinema.org/a/rELtozb3KeYL1sz5XDkqLyZhv.svg)](https://asciinema.org/a/rELtozb3KeYL1sz5XDkqLyZhv)
 
-##### From Hexlet student with love. Enjoy! ʕ•ᴥ•ʔﾉ♡ <br />
-
--------
+<hr>
 
 ## Игры Разума
-Этот проект включает в себя пять математических игр: "Проверка на чётность", "Калькулятор", "Наибольший общий делитель", "Арифметическая прогрессия" и "Простое ли число?". Все игры запускаются в терминале.
+Этот проект включает в себя пять математических игр: "Проверка на чётность", "Калькулятор", "Наибольший общий делитель", "Арифметическая прогрессия" и "Простое ли число?". Все игры запускаются с помощью терминала.
 
 ### Минимальные требования
 - [python](https://www.python.org/), версия 3.10 или выше
@@ -52,7 +52,7 @@ Now all games are available on these five commands:
 - [prompt](https://prompt.readthedocs.io/en/latest/) package, версия 0.4.1 или выше
 
 ### Как установить и играть
-Скачайте весь пакет и установите его с помощью команды: "make package-install" <br />
+Скачайте весь пакет и установите его с помощью команды: "make package-install". <br />
 После этого игры станут доступны, используйте эти команды:
 1. "brain-even" - запускает игру "Проверка на четность". На экран выводится число, нужно ввести "yes", если число четное и "no", если не четное.
 2. "brain-calc" - игра "Калькулятор". Даётся математическое выражение, нужно его вычислить и ввести результат.
@@ -60,6 +60,8 @@ Now all games are available on these five commands:
 4. "brain-progression" - игра "Арифметическая прогрессия". Даётся последовательность из чисел, в которой одно число спрятано, нужно ввести недостающее число.
 5. "brain-prime" - игра "Простое ли число?". Дается число, нужно ввести "yes", если число простое, если нет, ввести "no". [Подробнее о простых числах](https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B5_%D1%87%D0%B8%D1%81%D0%BB%D0%BE)
 
-[Как установить и играть - видео](https://github.com/zluuba/python-project-49#even-game)
+[Демо установки и игр](https://github.com/zluuba/python-project-49#even-game)
 
--------
+<hr>
+
+##### From [Hexlet](https://hexlet.io/my) student with love. <br /> Enjoy! ʕ•ᴥ•ʔﾉ♡
