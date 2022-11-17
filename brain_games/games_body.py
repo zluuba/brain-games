@@ -1,16 +1,27 @@
 import prompt
 
 
-def welcome_user(rule):
-    global name
+def welcome_brain_games():
     print('Welcome to the Brain Games!')
+
+
+def user_name():
+    global name
     name = prompt.string("May I have your name? ")
     print(f'Hello, {name}!')
+
+
+def welcome(rule):
+    welcome_brain_games()
+    user_name()
     rule()
 
 
 def question(expression):
     print(f'Question: {expression}')
+
+
+def user_answer():
     return prompt.string('Your answer: ')
 
 
@@ -32,10 +43,11 @@ def lose():
 
 
 def body(rule, expressions, results):
-    welcome_user(rule)
+    welcome(rule)
     count = 0
     while count < 3:
-        answer = question(expressions[count])
+        question(expressions[count])
+        answer = user_answer()
         result = str(results[count])
         correct = is_correct(answer, result)
         if correct:
