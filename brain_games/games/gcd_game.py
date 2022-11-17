@@ -32,6 +32,6 @@ def get_gsd_lists():
     return questions_gcd_list, results_gcd_list
 
 
-def greatest_cd():
+def gcd_body():
     questions_gcd_list, results_gcd_list = get_gsd_lists()
     body(gcd_rule, questions_gcd_list, results_gcd_list)

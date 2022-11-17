@@ -40,6 +40,6 @@ def get_progression_lists():
     return questions_progression_list, results_progression_list
 
 
-def progression():
+def progression_body():
     questions_list, results_list = get_progression_lists()
     body(progression_rule, questions_list, results_list)

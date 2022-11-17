@@ -29,6 +29,6 @@ def get_prime_lists():
     return prime_questions_list, prime_results_list
 
 
-def prime_game():
+def prime_body():
     questions_prime_list, results_prime_list = get_prime_lists()
     body(prime_rule, questions_prime_list, results_prime_list)

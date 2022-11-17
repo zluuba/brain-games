@@ -6,18 +6,10 @@ def even_rule():
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
 
-def get_number():
+def get_result():
     global number
     number = randint(1, 25)
-
-
-def get_result():
-    get_number()
-    if number % 2 == 0:
-        result = "yes"
-    else:
-        result = "no"
-    return result
+    return number % 2 == 0 and "yes" or "no"
 
 
 def get_even_lists():
@@ -32,6 +24,6 @@ def get_even_lists():
     return questions_even_list, results_even_list
 
 
-def is_even_game():
+def is_even_game_body():
     questions_even_list, results_even_list = get_even_lists()
     body(even_rule, questions_even_list, results_even_list)

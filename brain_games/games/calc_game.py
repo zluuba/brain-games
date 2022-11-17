@@ -39,6 +39,6 @@ def get_calc_lists():
     return questions_calc_list, results_calc_list
 
 
-def calculator():
+def calculator_body():
     questions_list, results_list = get_calc_lists()
     body(calc_rule, questions_list, results_list)
