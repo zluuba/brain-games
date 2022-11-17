@@ -1,8 +1,8 @@
-from brain_games.games.gcd_game import greatest_cd
+from brain_games.games.gcd_game import gcd_body
 
 
 def main_gcd():
-    greatest_cd()
+    gcd_body()
 
 
 if __name__ == '__main__':
