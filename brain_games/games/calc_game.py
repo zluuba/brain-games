@@ -3,8 +3,7 @@ from random import randint
 from brain_games.games_body import body
 
 
-def calc_rule():
-    print('What is the result of the expression?')
+game_rule = 'calculator_game'
 
 
 def get_math_expression():
@@ -41,4 +40,4 @@ def get_calc_lists():
 
 def calculator_body():
     questions_list, results_list = get_calc_lists()
-    body(calc_rule, questions_list, results_list)
+    body(game_rule, questions_list, results_list)

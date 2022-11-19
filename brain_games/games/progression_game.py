@@ -2,8 +2,7 @@ from random import randint
 from brain_games.games_body import body
 
 
-def progression_rule():
-    print('What number is missing in the progression?')
+game_rule = 'progression_game'
 
 
 def get_progression_result():
@@ -42,4 +41,4 @@ def get_progression_lists():
 
 def progression_body():
     questions_list, results_list = get_progression_lists()
-    body(progression_rule, questions_list, results_list)
+    body(game_rule, questions_list, results_list)

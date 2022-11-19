@@ -2,8 +2,7 @@ from random import randint
 from brain_games.games_body import body
 
 
-def prime_rule():
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
+game_rule = 'prime_game'
 
 
 def get_prime_result():
@@ -31,4 +30,4 @@ def get_prime_lists():
 
 def prime_body():
     questions_prime_list, results_prime_list = get_prime_lists()
-    body(prime_rule, questions_prime_list, results_prime_list)
+    body(game_rule, questions_prime_list, results_prime_list)

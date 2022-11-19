@@ -2,8 +2,7 @@ from random import randint
 from brain_games.games_body import body
 
 
-def gcd_rule():
-    print('Find the greatest common divisor of given numbers.')
+game_rule = 'gcd_game'
 
 
 def get_gcd_result():
@@ -34,4 +33,4 @@ def get_gsd_lists():
 
 def gcd_body():
     questions_gcd_list, results_gcd_list = get_gsd_lists()
-    body(gcd_rule, questions_gcd_list, results_gcd_list)
+    body(game_rule, questions_gcd_list, results_gcd_list)

@@ -1,27 +1,40 @@
 import prompt
 
 
-def welcome_brain_games():
+def show_welcome_brain_games():
     print('Welcome to the Brain Games!')
 
 
-def user_name():
+def get_user_name():
     global name
     name = prompt.string("May I have your name? ")
     print(f'Hello, {name}!')
 
 
-def welcome(rule):
-    welcome_brain_games()
-    user_name()
-    rule()
+def show_game_rule(game_rule):
+    if game_rule == 'even_game':
+        print('Answer "yes" if the number is even, otherwise answer "no".')
+    elif game_rule == 'calculator_game':
+        print('What is the result of the expression?')
+    elif game_rule == 'gcd_game':
+        print('Find the greatest common divisor of given numbers.')
+    elif game_rule == 'progression_game':
+        print('What number is missing in the progression?')
+    elif game_rule == 'prime_game':
+        print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
 
-def question(expression):
+def greet_user(rule_number):
+    show_welcome_brain_games()
+    get_user_name()
+    show_game_rule(rule_number)
+
+
+def show_question(expression):
     print(f'Question: {expression}')
 
 
-def user_answer():
+def get_user_answer():
     return prompt.string('Your answer: ')
 
 
@@ -34,27 +47,27 @@ def is_correct(answer, result):
         return False
 
 
-def win():
+def show_user_win():
     print(f'Congratulations, {name}!')
 
 
-def lose():
+def show_user_lose():
     print(f"Let's try again, {name}!")
 
 
-def body(rule, expressions, results):
-    welcome(rule)
+def body(game_rule, expressions, results):
+    greet_user(game_rule)
     count = 0
     while count < 3:
-        question(expressions[count])
-        answer = user_answer()
+        show_question(expressions[count])
+        answer = get_user_answer()
         result = str(results[count])
         correct = is_correct(answer, result)
         if correct:
             count += 1
             continue
         else:
-            lose()
+            show_user_lose()
             break
     else:
-        win()
+        show_user_win()

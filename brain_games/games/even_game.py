@@ -2,8 +2,7 @@ from random import randint
 from brain_games.games_body import body
 
 
-def even_rule():
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+game_rule = 'even_game'
 
 
 def get_result():
@@ -26,4 +25,4 @@ def get_even_lists():
 
 def is_even_game_body():
     questions_even_list, results_even_list = get_even_lists()
-    body(even_rule, questions_even_list, results_even_list)
+    body(game_rule, questions_even_list, results_even_list)
