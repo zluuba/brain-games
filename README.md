@@ -5,7 +5,7 @@
 ### Welcome to the Brain Games
 This project includes five math games: "Parity Check", "Calculator", "Greatest Common Divisor", "Arithmetic Progression" and "Is it a Simple Number?".
 All games are started and played using the terminal. <br />
-[Readme на русском языке](https://github.com/zluuba/python-project-49#%D0%B8%D0%B3%D1%80%D1%8B-%D1%80%D0%B0%D0%B7%D1%83%D0%BC%D0%B0)
+[Readme на русском языке >>](https://github.com/zluuba/python-project-49#%D0%B8%D0%B3%D1%80%D1%8B-%D1%80%D0%B0%D0%B7%D1%83%D0%BC%D0%B0)
 
 ### Requirements
 - [python](https://www.python.org/), version 3.10 or higher
@@ -60,7 +60,7 @@ Now all games are available on these five commands:
 4. "**brain-progression**" - игра "Арифметическая прогрессия". Даётся последовательность из чисел, в которой одно число спрятано, нужно ввести недостающее число.
 5. "**brain-prime**" - игра "Простое ли число?". Дается число, нужно ввести "yes", если число простое, если нет, ввести "no". [Подробнее о простых числах](https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B5_%D1%87%D0%B8%D1%81%D0%BB%D0%BE)
 
-[Демо установки и запуска игр](https://github.com/zluuba/python-project-49#even-game)
+[Демо установки и запуска игр >>](https://github.com/zluuba/python-project-49#even-game)
 
 <hr>
 
