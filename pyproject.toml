@@ -7,6 +7,13 @@ authors = ["Luybov Nikitina <zluyba.nikitina@gmail.com>"]
 readme = "README.md"
 repository = "https://github.com/zluuba/python-project-49"
 packages = [{include = "brain_games"}]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Natural Language :: English",
+    "Programming Language :: Python",
+    "Topic :: Games/Entertainment"
+]
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
