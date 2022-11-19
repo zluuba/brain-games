@@ -19,7 +19,7 @@ def get_num_and_result():
 def get_prime_lists():
     prime_questions_list = []
     prime_results_list = []
-    for count in range(3):
+    for count in range(1, 4):
         result, number = get_num_and_result()
         prime_questions_list.append(number)
         prime_results_list.append(str(result))
