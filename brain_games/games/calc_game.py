@@ -41,3 +41,6 @@ def get_calc_lists():
 # run the create lists function pass its result to the
 # variables that the engine imports
 calc_questions, calc_results = get_calc_lists()
+
+# pack game variables in one for game engine
+calculator = game_rule, calc_questions, calc_results

@@ -58,7 +58,9 @@ def show_user_lose(name):
 
 
 # game engine. called by /scripts/, interacts with all other functions
-def start_game(game_rule, expressions, results):
+def start_game(game):
+    # unpacking game variables
+    game_rule, expressions, results = game
     # shows greeting, takes username, shows game rule
     name = greet_user(game_rule)
     for count in range(3):

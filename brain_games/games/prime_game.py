@@ -28,4 +28,7 @@ def get_prime_lists():
 
 # run the create lists function pass its result to the
 # variables that the engine imports
-questions, results = get_prime_lists()
+prime_questions, prime_results = get_prime_lists()
+
+# pack game variables in one for game engine
+prime = game_rule, prime_questions, prime_results

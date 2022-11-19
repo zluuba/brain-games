@@ -41,3 +41,6 @@ def get_progression_lists():
 # run the create lists function pass its result to the
 # variables that the engine imports
 questions, results = get_progression_lists()
+
+# pack game variables in one for game engine
+progression = game_rule, questions, results

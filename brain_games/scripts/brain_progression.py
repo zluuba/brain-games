@@ -1,9 +1,9 @@
-from brain_games.games.progression_game import game_rule, questions, results
+from brain_games.games.progression_game import progression
 from brain_games.games_body import start_game
 
 
 def main_progression():
-    start_game(game_rule, questions, results)
+    start_game(progression)
 
 
 if __name__ == '__main__':

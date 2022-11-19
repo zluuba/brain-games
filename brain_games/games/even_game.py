@@ -25,3 +25,6 @@ def get_even_lists():
 # run the create lists function pass its result to the
 # variables that the engine imports
 even_questions, even_results = get_even_lists()
+
+# pack game variables in one for game engine
+even = game_rule, even_questions, even_results

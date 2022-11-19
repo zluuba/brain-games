@@ -32,3 +32,6 @@ def get_gcd_lists():
 # run the create lists function pass its result to the
 # variables that the engine imports
 gcd_questions, gcd_results = get_gcd_lists()
+
+# pack game variables in one for game engine
+gcd = game_rule, gcd_questions, gcd_results
