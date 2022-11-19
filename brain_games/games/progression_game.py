@@ -29,13 +29,13 @@ def get_progression_result():
 
 # generate lists of mathematical expressions and their answers
 def get_progression_lists():
-    questions_list = []
-    results_list = []
-    for count in range(3):
+    progression_questions_list = []
+    progression_results_list = []
+    for count in range(1, 4):
         result, progression_expression = get_progression_result()
-        questions_list.append(progression_expression)
-        results_list.append(str(result))
-    return questions_list, results_list
+        progression_questions_list.append(progression_expression)
+        progression_results_list.append(str(result))
+    return progression_questions_list, progression_results_list
 
 
 # run the create lists function pass its result to the
