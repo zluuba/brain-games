@@ -19,9 +19,9 @@ def get_num_and_result():
 def get_prime_lists():
     prime_questions_list, prime_results_list = [], []
     for count in range(1, 4):
-        prime_result, number = get_num_and_result()
-        prime_questions_list.append(number)
+        prime_result, numbers = get_num_and_result()
         prime_results_list.append(str(prime_result))
+        prime_questions_list.append(numbers)
     return prime_questions_list, prime_results_list
 
 
