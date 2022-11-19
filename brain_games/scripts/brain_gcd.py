@@ -1,9 +1,9 @@
 from brain_games.games.gcd_game import game_rule, questions, results
-from brain_games.games_body import body
+from brain_games.games_body import start_game
 
 
 def main_gcd():
-    body(game_rule, questions, results)
+    start_game(game_rule, questions, results)
 
 
 if __name__ == '__main__':
