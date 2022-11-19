@@ -24,4 +24,4 @@ def get_even_lists():
 
 # run the create lists function pass its result to the
 # variables that the engine imports
-questions, results = get_even_lists()
+even_questions, even_results = get_even_lists()

@@ -40,4 +40,4 @@ def get_calc_lists():
 
 # run the create lists function pass its result to the
 # variables that the engine imports
-questions, results = get_calc_lists()
+calc_questions, calc_results = get_calc_lists()

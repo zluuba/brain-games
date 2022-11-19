@@ -31,4 +31,4 @@ def get_gcd_lists():
 
 # run the create lists function pass its result to the
 # variables that the engine imports
-questions, results = get_gcd_lists()
+gcd_questions, gcd_results = get_gcd_lists()
