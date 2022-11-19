@@ -17,8 +17,7 @@ def get_num_and_result():
 
 # generate lists of mathematical expressions and their answers
 def get_prime_lists():
-    prime_questions_list = []
-    prime_results_list = []
+    prime_questions_list, prime_results_list = [], []
     for count in range(1, 4):
         prime_result, number = get_num_and_result()
         prime_questions_list.append(number)
