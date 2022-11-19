@@ -29,12 +29,10 @@ def get_math_expression_result():
 def get_calc_lists():
     questions_calc_list = []
     results_calc_list = []
-    count = 0
-    while count < 3:
+    for count in range(3):
         result = get_math_expression_result()
         questions_calc_list.append(expression)
         results_calc_list.append(str(result))
-        count += 1
     return questions_calc_list, results_calc_list
 
 

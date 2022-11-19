@@ -12,14 +12,12 @@ def get_result():
 
 
 def get_even_lists():
-    counter = 1
     questions_even_list = []
     results_even_list = []
-    while counter <= 3:
+    for count in range(3):
         result = get_result()
         questions_even_list.append(number)
         results_even_list.append(str(result))
-        counter += 1
     return questions_even_list, results_even_list
 
 

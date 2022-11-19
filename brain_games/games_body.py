@@ -57,14 +57,12 @@ def show_user_lose():
 
 def body(game_rule, expressions, results):
     greet_user(game_rule)
-    count = 0
-    while count < 3:
+    for count in range(3):
         show_question(expressions[count])
         answer = get_user_answer()
         result = str(results[count])
         correct = is_correct(answer, result)
         if correct:
-            count += 1
             continue
         else:
             show_user_lose()

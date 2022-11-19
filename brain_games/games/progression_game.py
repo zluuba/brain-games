@@ -30,12 +30,10 @@ def get_progression_result():
 def get_progression_lists():
     questions_progression_list = []
     results_progression_list = []
-    count = 0
-    while count < 3:
+    for count in range(3):
         result = get_progression_result()
         questions_progression_list.append(progression_expression)
         results_progression_list.append(str(result))
-        count += 1
     return questions_progression_list, results_progression_list
 
 

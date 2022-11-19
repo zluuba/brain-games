@@ -22,12 +22,10 @@ def get_gcd_result():
 def get_gsd_lists():
     questions_gcd_list = []
     results_gcd_list = []
-    count = 0
-    while count < 3:
+    for count in range(3):
         result = get_gcd_result()
         questions_gcd_list.append(numbers)
         results_gcd_list.append(str(result))
-        count += 1
     return questions_gcd_list, results_gcd_list
 
 

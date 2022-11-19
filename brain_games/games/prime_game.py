@@ -17,14 +17,12 @@ def get_prime_result():
 
 
 def get_prime_lists():
-    count = 0
     prime_questions_list = []
     prime_results_list = []
-    while count < 3:
+    for count in range(3):
         result = get_prime_result()
         prime_questions_list.append(number)
         prime_results_list.append(str(result))
-        count += 1
     return prime_questions_list, prime_results_list
 
 
