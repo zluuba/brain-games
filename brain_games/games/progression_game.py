@@ -31,7 +31,7 @@ def get_progression_result():
 def get_progression_lists():
     progression_questions_list = []
     progression_results_list = []
-    for count in range(1, 4):
+    for counter in range(0, 3):
         result, progression_expression = get_progression_result()
         progression_questions_list.append(progression_expression)
         progression_results_list.append(str(result))
