@@ -5,7 +5,7 @@ from random import randint
 game_rule = 'calculator_game'
 
 
-def get_math_expression():
+def get_expression_parts():
     num1 = randint(1, 25)
     num2 = randint(1, 25)
     operators = ['+', '-', '*']
@@ -13,8 +13,8 @@ def get_math_expression():
     return num1, num2, operator
 
 
-def get_math_expression_result():
-    num1, num2, operator = get_math_expression()
+def get_expression_and_result():
+    num1, num2, operator = get_expression_parts()
     expression = f'{num1} {operator} {num2}'
     if operator == "+":
         result_int = num1 + num2
@@ -29,7 +29,7 @@ def get_calc_lists():
     questions_calc_list = []
     results_calc_list = []
     for count in range(3):
-        result, expression = get_math_expression_result()
+        result, expression = get_expression_and_result()
         questions_calc_list.append(expression)
         results_calc_list.append(str(result))
     return questions_calc_list, results_calc_list

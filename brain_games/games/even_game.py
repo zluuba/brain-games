@@ -4,18 +4,18 @@ from random import randint
 game_rule = 'even_game'
 
 
-def get_result():
-    number = randint(0, 25)
-    result = number % 2 == 0 and "yes" or "no"
-    return number, result
+def get_num_and_result():
+    num = randint(0, 25)
+    result = num % 2 == 0 and "yes" or "no"
+    return num, result
 
 
 def get_even_lists():
     questions_even_list = []
     results_even_list = []
     for count in range(3):
-        number, result = get_result()
-        questions_even_list.append(number)
+        num, result = get_num_and_result()
+        questions_even_list.append(num)
         results_even_list.append(str(result))
     return questions_even_list, results_even_list
 

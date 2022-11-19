@@ -24,10 +24,10 @@ def show_game_rule(game_rule):
         print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
 
-def greet_user(rule_number):
+def greet_user(game_rule):
     show_welcome_brain_games()
     name = get_user_name()
-    show_game_rule(rule_number)
+    show_game_rule(game_rule)
     return name
 
 
@@ -56,7 +56,7 @@ def show_user_lose(name):
     print(f"Let's try again, {name}!")
 
 
-def body(game_rule, expressions, results):
+def start_game(game_rule, expressions, results):
     name = greet_user(game_rule)
     for count in range(3):
         show_question(expressions[count])

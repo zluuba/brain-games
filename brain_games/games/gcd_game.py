@@ -13,11 +13,11 @@ def get_gcd_result():
             num1 = num1 % num2
         else:
             num2 = num2 % num1
-    pre_result = num1 + num2
-    return pre_result, numbers
+    result = num1 + num2
+    return result, numbers
 
 
-def get_gsd_lists():
+def get_gcd_lists():
     questions_gcd_list = []
     results_gcd_list = []
     for count in range(3):
@@ -27,4 +27,4 @@ def get_gsd_lists():
     return questions_gcd_list, results_gcd_list
 
 
-questions, results = get_gsd_lists()
+questions, results = get_gcd_lists()
