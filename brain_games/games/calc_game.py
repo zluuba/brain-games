@@ -6,30 +6,30 @@ game_rule = 'calculator_game'
 
 
 def get_math_expression():
-    global num1, num2, operator, expression
     num1 = randint(1, 25)
     num2 = randint(1, 25)
     operators = ['+', '-', '*']
     operator = random.choice(operators)
-    expression = f'{num1} {operator} {num2}'
+    return num1, num2, operator
 
 
 def get_math_expression_result():
-    get_math_expression()
+    num1, num2, operator = get_math_expression()
+    expression = f'{num1} {operator} {num2}'
     if operator == "+":
         result_int = num1 + num2
     elif operator == "-":
         result_int = num1 - num2
     else:
         result_int = num1 * num2
-    return result_int
+    return result_int, expression
 
 
 def get_calc_lists():
     questions_calc_list = []
     results_calc_list = []
     for count in range(3):
-        result = get_math_expression_result()
+        result, expression = get_math_expression_result()
         questions_calc_list.append(expression)
         results_calc_list.append(str(result))
     return questions_calc_list, results_calc_list

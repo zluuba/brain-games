@@ -20,17 +20,16 @@ def get_progression_result():
     final_progression[hide_char_index] = '..'
 
     # create progression what user see
-    global progression_expression
     progression_expression = " ".join(map(str, final_progression))
 
-    return hide_digit
+    return hide_digit, progression_expression
 
 
 def get_progression_lists():
     questions_progression_list = []
     results_progression_list = []
     for count in range(3):
-        result = get_progression_result()
+        result, progression_expression = get_progression_result()
         questions_progression_list.append(progression_expression)
         results_progression_list.append(str(result))
     return questions_progression_list, results_progression_list

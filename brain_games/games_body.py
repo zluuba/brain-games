@@ -6,9 +6,9 @@ def show_welcome_brain_games():
 
 
 def get_user_name():
-    global name
     name = prompt.string("May I have your name? ")
     print(f'Hello, {name}!')
+    return name
 
 
 def show_game_rule(game_rule):
@@ -26,8 +26,9 @@ def show_game_rule(game_rule):
 
 def greet_user(rule_number):
     show_welcome_brain_games()
-    get_user_name()
+    name = get_user_name()
     show_game_rule(rule_number)
+    return name
 
 
 def show_question(expression):
@@ -47,16 +48,16 @@ def is_correct(answer, result):
         return False
 
 
-def show_user_win():
+def show_user_win(name):
     print(f'Congratulations, {name}!')
 
 
-def show_user_lose():
+def show_user_lose(name):
     print(f"Let's try again, {name}!")
 
 
 def body(game_rule, expressions, results):
-    greet_user(game_rule)
+    name = greet_user(game_rule)
     for count in range(3):
         show_question(expressions[count])
         answer = get_user_answer()
@@ -65,7 +66,7 @@ def body(game_rule, expressions, results):
         if correct:
             continue
         else:
-            show_user_lose()
+            show_user_lose(name)
             break
     else:
-        show_user_win()
+        show_user_win(name)
