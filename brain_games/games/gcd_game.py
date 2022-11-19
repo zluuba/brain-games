@@ -1,5 +1,4 @@
 from random import randint
-from brain_games.games_body import body
 
 
 game_rule = 'gcd_game'
@@ -29,6 +28,4 @@ def get_gsd_lists():
     return questions_gcd_list, results_gcd_list
 
 
-def gcd_body():
-    questions_gcd_list, results_gcd_list = get_gsd_lists()
-    body(game_rule, questions_gcd_list, results_gcd_list)
+questions, results = get_gsd_lists()

@@ -1,8 +1,9 @@
-from brain_games.games.even_game import is_even_game_body
+from brain_games.games.even_game import game_rule, questions, results
+from brain_games.games_body import body
 
 
 def main_even():
-    is_even_game_body()
+    body(game_rule, questions, results)
 
 
 if __name__ == '__main__':

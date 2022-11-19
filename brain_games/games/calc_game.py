@@ -1,6 +1,5 @@
 import random
 from random import randint
-from brain_games.games_body import body
 
 
 game_rule = 'calculator_game'
@@ -36,6 +35,4 @@ def get_calc_lists():
     return questions_calc_list, results_calc_list
 
 
-def calculator_body():
-    questions_list, results_list = get_calc_lists()
-    body(game_rule, questions_list, results_list)
+questions, results = get_calc_lists()

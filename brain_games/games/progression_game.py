@@ -1,5 +1,4 @@
 from random import randint
-from brain_games.games_body import body
 
 
 game_rule = 'progression_game'
@@ -37,6 +36,4 @@ def get_progression_lists():
     return questions_progression_list, results_progression_list
 
 
-def progression_body():
-    questions_list, results_list = get_progression_lists()
-    body(game_rule, questions_list, results_list)
+questions, results = get_progression_lists()

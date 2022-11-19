@@ -1,5 +1,4 @@
 from random import randint
-from brain_games.games_body import body
 
 
 game_rule = 'prime_game'
@@ -26,6 +25,4 @@ def get_prime_lists():
     return prime_questions_list, prime_results_list
 
 
-def prime_body():
-    questions_prime_list, results_prime_list = get_prime_lists()
-    body(game_rule, questions_prime_list, results_prime_list)
+questions, results = get_prime_lists()
