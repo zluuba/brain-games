@@ -11,6 +11,7 @@ def get_user_name():
     return name
 
 
+# user see the one rule, 'game_rule' in corresponding modules in folder /games/
 def show_game_rule(game_rule):
     if game_rule == 'even_game':
         print('Answer "yes" if the number is even, otherwise answer "no".')
@@ -56,12 +57,17 @@ def show_user_lose(name):
     print(f"Let's try again, {name}!")
 
 
+# game engine. called by /scripts/, interacts with all other functions
 def start_game(game_rule, expressions, results):
+    # shows greeting, takes username, shows game rule
     name = greet_user(game_rule)
     for count in range(3):
+        # gets one expression and shows user
         show_question(expressions[count])
         answer = get_user_answer()
+        # gets result that matches the expression
         result = str(results[count])
+        # checks if the user's answer and result match
         correct = is_correct(answer, result)
         if correct:
             continue

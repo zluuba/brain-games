@@ -4,6 +4,7 @@ from random import randint
 game_rule = 'gcd_game'
 
 
+# creates two numbers and finds the Greatest Common Divisor (gcd)
 def get_gcd_result():
     num1 = randint(1, 25)
     num2 = randint(1, 25)
@@ -17,6 +18,7 @@ def get_gcd_result():
     return result, numbers
 
 
+# generate lists of mathematical expressions and their answers
 def get_gcd_lists():
     questions_gcd_list = []
     results_gcd_list = []
@@ -27,4 +29,6 @@ def get_gcd_lists():
     return questions_gcd_list, results_gcd_list
 
 
+# run the create lists function pass its result to the
+# variables that the engine imports
 questions, results = get_gcd_lists()

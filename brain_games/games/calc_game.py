@@ -13,6 +13,8 @@ def get_expression_parts():
     return num1, num2, operator
 
 
+# create one simple math expression, calculate the result
+# example: '14 + 9', '23 - 7', '5 * 12'
 def get_expression_and_result():
     num1, num2, operator = get_expression_parts()
     expression = f'{num1} {operator} {num2}'
@@ -25,6 +27,7 @@ def get_expression_and_result():
     return result_int, expression
 
 
+# generate lists of mathematical expressions and their answers
 def get_calc_lists():
     questions_calc_list = []
     results_calc_list = []
@@ -35,4 +38,6 @@ def get_calc_lists():
     return questions_calc_list, results_calc_list
 
 
+# run the create lists function pass its result to the
+# variables that the engine imports
 questions, results = get_calc_lists()

@@ -4,6 +4,8 @@ from random import randint
 game_rule = 'progression_game'
 
 
+# creates an arithmetic sequence with one hide number.
+# Example: '12, 15, 18, .., 21, 24'
 def get_progression_result():
     # create simple variables for future calculation
     first_num = randint(1, 20)
@@ -19,12 +21,13 @@ def get_progression_result():
     hide_digit = str(final_progression[hide_char_index])
     final_progression[hide_char_index] = '..'
 
-    # create progression what user see
+    # create progression what user see (with hide char)
     progression_expression = " ".join(map(str, final_progression))
 
     return hide_digit, progression_expression
 
 
+# generate lists of mathematical expressions and their answers
 def get_progression_lists():
     questions_progression_list = []
     results_progression_list = []
@@ -35,4 +38,6 @@ def get_progression_lists():
     return questions_progression_list, results_progression_list
 
 
+# run the create lists function pass its result to the
+# variables that the engine imports
 questions, results = get_progression_lists()
