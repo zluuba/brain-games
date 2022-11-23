@@ -11,24 +11,29 @@ def get_numbers():
     return num1, num2
 
 
-# create an expression that the user will see
+# create an expression of gcd that the user will see
 def get_expression():
     num1, num2 = get_numbers()
-    numbers = f'{num1} {num2}'
-    return num1, num2, numbers
+    expression = f'{num1} {num2}'
+    return num1, num2, expression
 
 
-# find result - the Greatest Common Divisor(gcd)
-def get_gcd_result():
-    num1, num2, numbers = get_expression()
-
+# find the greatest common divisor(gcd)
+def get_gcd_result(num1, num2):
     while num1 != 0 and num2 != 0:
         if num1 > num2:
             num1 = num1 % num2
         else:
             num2 = num2 % num1
     result = num1 or num2
-    return result, numbers
+    return result
+
+
+# combines finding an expression and result
+def get_gcd_result_and_expression():
+    num1, num2, expression = get_expression()
+    result = get_gcd_result(num1, num2)
+    return result, expression
 
 
 # generate lists of mathematical expressions and their answers
@@ -36,8 +41,8 @@ def get_gcd_lists():
     questions_gcd_list = []
     results_gcd_list = []
     for _ in range(3):
-        result, numbers = get_gcd_result()
-        questions_gcd_list.append(numbers)
+        result, expression = get_gcd_result_and_expression()
+        questions_gcd_list.append(expression)
         results_gcd_list.append(str(result))
     return questions_gcd_list, results_gcd_list
 
