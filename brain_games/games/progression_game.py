@@ -1,7 +1,7 @@
 from random import randint
 
 
-game_rule = 'progression_game'
+game_rule = 'What number is missing in the progression?'
 
 
 # creates an arithmetic sequence with one hide number.
@@ -31,7 +31,7 @@ def get_progression_result():
 def get_progression_lists():
     questions_list = []
     results_list = []
-    for counter in range(1, 4):
+    for _ in range(1, 4):
         result, progression_expression = get_progression_result()
         questions_list.append(progression_expression)
         results_list.append(str(result))

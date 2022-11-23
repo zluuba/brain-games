@@ -1,13 +1,13 @@
 from random import randint
 
 
-game_rule = 'even_game'
+game_rule = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 # creates one number and checks its parity
 def get_num_and_result():
     num = randint(0, 25)
-    result = num % 2 == 0 and "yes" or "no"
+    result = 'yes' if num % 2 == 0 else 'no'
     return num, result
 
 
@@ -15,7 +15,7 @@ def get_num_and_result():
 def get_even_lists():
     questions_even_list = []
     results_even_list = []
-    for count in range(3):
+    for _ in range(3):
         num, result = get_num_and_result()
         questions_even_list.append(num)
         results_even_list.append(str(result))

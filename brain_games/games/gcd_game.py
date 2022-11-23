@@ -1,7 +1,7 @@
 from random import randint
 
 
-game_rule = 'gcd_game'
+game_rule = 'Find the greatest common divisor of given numbers.'
 
 
 # creates two numbers and finds the Greatest Common Divisor (gcd)
@@ -14,7 +14,7 @@ def get_gcd_result():
             num1 = num1 % num2
         else:
             num2 = num2 % num1
-    result = num1 + num2
+    result = num1 or num2
     return result, numbers
 
 
@@ -22,7 +22,7 @@ def get_gcd_result():
 def get_gcd_lists():
     questions_gcd_list = []
     results_gcd_list = []
-    for count in range(3):
+    for _ in range(3):
         result, numbers = get_gcd_result()
         questions_gcd_list.append(numbers)
         results_gcd_list.append(str(result))

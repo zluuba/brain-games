@@ -1,8 +1,9 @@
 import random
+# import operator
 from random import randint
 
 
-game_rule = 'calculator_game'
+game_rule = 'What is the result of the expression?'
 
 
 def get_expression_parts():
@@ -19,19 +20,19 @@ def get_expression_and_result():
     num1, num2, operator = get_expression_parts()
     expression = f'{num1} {operator} {num2}'
     if operator == "+":
-        result_int = num1 + num2
+        result = num1 + num2    # add(a, b)
     elif operator == "-":
-        result_int = num1 - num2
+        result = num1 - num2    # sub(a, b)
     else:
-        result_int = num1 * num2
-    return result_int, expression
+        result = num1 * num2    # mul(a, b)
+    return result, expression
 
 
 # generate lists of mathematical expressions and their answers
 def get_calc_lists():
     questions_calc_list = []
     results_calc_list = []
-    for count in range(3):
+    for _ in range(3):
         result, expression = get_expression_and_result()
         questions_calc_list.append(expression)
         results_calc_list.append(str(result))

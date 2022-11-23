@@ -1,7 +1,7 @@
 from random import randint
 
 
-game_rule = 'prime_game'
+game_rule = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 # creates one number and checks if it is prime
@@ -18,7 +18,7 @@ def get_num_and_result():
 # generate lists of mathematical expressions and their answers
 def get_prime_lists():
     prime_questions_list, prime_results_list = [], []
-    for count in range(1, 4):
+    for _ in range(1, 4):
         prime_result, numbers = get_num_and_result()
         prime_results_list.append(str(prime_result))
         prime_questions_list.append(numbers)

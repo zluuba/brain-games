@@ -5,24 +5,14 @@ def show_welcome_brain_games():
     print('Welcome to the Brain Games!')
 
 
+def show_game_rule(game_rule):
+    print(game_rule)
+
+
 def get_user_name():
     name = prompt.string("May I have your name? ")
     print(f'Hello, {name}!')
     return name
-
-
-# user see the one rule, 'game_rule' in corresponding modules in folder /games/
-def show_game_rule(game_rule):
-    if game_rule == 'even_game':
-        print('Answer "yes" if the number is even, otherwise answer "no".')
-    elif game_rule == 'calculator_game':
-        print('What is the result of the expression?')
-    elif game_rule == 'gcd_game':
-        print('Find the greatest common divisor of given numbers.')
-    elif game_rule == 'progression_game':
-        print('What number is missing in the progression?')
-    elif game_rule == 'prime_game':
-        print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
 
 def greet_user(game_rule):
@@ -71,9 +61,7 @@ def start_game(game):
         result = str(results[count])
         # checks if the user's answer and result match
         correct = is_correct(answer, result)
-        if correct:
-            continue
-        else:
+        if not correct:
             show_user_lose(name)
             break
     else:
