@@ -13,13 +13,13 @@ def get_num_and_result():
 
 # generate lists of mathematical expressions and their answers
 def get_even_lists():
-    questions_even_list = []
-    results_even_list = []
+    list_with_questions = []
+    list_with_results = []
     for _ in range(3):
         num, result = get_num_and_result()
-        questions_even_list.append(num)
-        results_even_list.append(str(result))
-    return questions_even_list, results_even_list
+        list_with_questions.append(num)
+        list_with_results.append(str(result))
+    return list_with_questions, list_with_results
 
 
 # run the create lists function pass its result to the
