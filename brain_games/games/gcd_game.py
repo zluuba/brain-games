@@ -6,8 +6,8 @@ game_rule = 'Find the greatest common divisor of given numbers.'
 
 # creates two numbers and finds the Greatest Common Divisor (gcd)
 def get_gcd_result():
-    num1 = randint(1, 25)
-    num2 = randint(1, 25)
+    num1, num2 = randint(1, 25), randint(1, 25)
+    # numbers - what user see
     numbers = f'{num1} {num2}'
     while num1 != 0 and num2 != 0:
         if num1 > num2:

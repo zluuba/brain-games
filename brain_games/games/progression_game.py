@@ -33,8 +33,8 @@ def get_progression_lists():
     results_list = []
     for _ in range(1, 4):
         result, progression_expression = get_progression_result()
-        questions_list.append(progression_expression)
         results_list.append(str(result))
+        questions_list.append(progression_expression)
     return questions_list, results_list
 
 
