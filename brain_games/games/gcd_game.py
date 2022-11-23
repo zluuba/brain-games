@@ -25,8 +25,7 @@ def get_gcd_result(num1, num2):
             num1 = num1 % num2
         else:
             num2 = num2 % num1
-    result = num1 or num2
-    return result
+    return num1 or num2
 
 
 # combines finding an expression and result
