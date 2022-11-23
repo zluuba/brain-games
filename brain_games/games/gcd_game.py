@@ -21,6 +21,7 @@ def get_expression():
 # find result - the Greatest Common Divisor(gcd)
 def get_gcd_result():
     num1, num2, numbers = get_expression()
+
     while num1 != 0 and num2 != 0:
         if num1 > num2:
             num1 = num1 % num2
