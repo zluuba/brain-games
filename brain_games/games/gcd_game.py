@@ -19,19 +19,14 @@ def get_expression():
 
 
 # find the greatest common divisor(gcd)
-def get_gcd_result(num1, num2):
-    while num1 != 0 and num2 != 0:
-        if num1 > num2:
-            num1 = num1 % num2
-        else:
-            num2 = num2 % num1
-    return num1 or num2
-
-
-# combines finding an expression and result
-def get_gcd_result_and_expression():
+def get_gcd_result():
     num1, num2, expression = get_expression()
-    result = get_gcd_result(num1, num2)
+    while num1 != num2:
+        if num1 > num2:
+            num1 = num1 - num2
+        else:
+            num2 = num2 - num1
+    result = num2
     return result, expression
 
 
@@ -40,7 +35,7 @@ def get_gcd_lists():
     questions_gcd_list = []
     results_gcd_list = []
     for _ in range(3):
-        result, expression = get_gcd_result_and_expression()
+        result, expression = get_gcd_result()
         questions_gcd_list.append(expression)
         results_gcd_list.append(str(result))
     return questions_gcd_list, results_gcd_list
