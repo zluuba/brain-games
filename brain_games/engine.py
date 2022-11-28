@@ -1,10 +1,7 @@
 import prompt
 
 
-num_of_rounds = 3
-
-
-def get_user_name_and_welcome_him(game_rule):
+def get_user_name_and_show_welcome(game_rule):
     print('Welcome to the Brain Games!')
     name = prompt.string("May I have your name? ")
     print(f'Hello, {name}!')
@@ -27,8 +24,9 @@ def is_correct(answer, result):
 
 def start_game(game):
     game_rule = game.game_rule
-    name = get_user_name_and_welcome_him(game_rule)
-    for _ in range(num_of_rounds):
+    name = get_user_name_and_show_welcome(game_rule)
+    rounds = 3
+    for _ in range(rounds):
         result, expression = game.get_result_and_expression()
         answer = get_user_answer_and_show_question(expression)
         correct = is_correct(answer, str(result))
