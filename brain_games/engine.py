@@ -18,32 +18,24 @@ def get_user_answer_and_show_question(expression):
     return answer
 
 
-def is_correct_check_and_show_to_user(answer, result):
+def is_correct(answer, result):
     if answer == result:
-        print('Correct!')
         return True
     else:
-        print(f"'{answer}' is wrong answer ;(. Correct answer was '{result}'.")
         return False
 
 
-def show_user_win(name):
-    print(f'Congratulations, {name}!')
-
-
-def show_user_lose(name):
-    print(f"Let's try again, {name}!")
-
-
 def start_game(game):
-    game_rule, expressions, results = game
+    game_rule = game.game_rule
     name = get_user_name_and_welcome_him(game_rule)
-    for round in range(num_of_rounds):
-        answer = get_user_answer_and_show_question(expressions[round])
-        result = str(results[round])
-        correct = is_correct_check_and_show_to_user(answer, result)
+    for _ in range(num_of_rounds):
+        result, expression = game.get_result_and_expression()
+        answer = get_user_answer_and_show_question(expression)
+        correct = is_correct(answer, str(result))
         if not correct:
-            show_user_lose(name)
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{result}'.")
+            print(f"Let's try again, {name}!")
             break
+        print('Correct!')
     else:
-        show_user_win(name)
+        print(f'Congratulations, {name}!')
