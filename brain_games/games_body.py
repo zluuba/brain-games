@@ -1,36 +1,24 @@
 import prompt
 
 
-def show_welcome_brain_games():
+num_of_rounds = 3
+
+
+def get_user_name_and_welcome_him(game_rule):
     print('Welcome to the Brain Games!')
-
-
-def show_game_rule(game_rule):
-    print(game_rule)
-
-
-def get_user_name():
     name = prompt.string("May I have your name? ")
     print(f'Hello, {name}!')
+    print(game_rule)
     return name
 
 
-def greet_user(game_rule):
-    show_welcome_brain_games()
-    name = get_user_name()
-    show_game_rule(game_rule)
-    return name
-
-
-def show_question(expression):
+def get_user_answer_and_show_question(expression):
     print(f'Question: {expression}')
+    answer = prompt.string('Your answer: ')
+    return answer
 
 
-def get_user_answer():
-    return prompt.string('Your answer: ')
-
-
-def is_correct(answer, result):
+def is_correct_check_and_show_to_user(answer, result):
     if answer == result:
         print('Correct!')
         return True
@@ -47,20 +35,13 @@ def show_user_lose(name):
     print(f"Let's try again, {name}!")
 
 
-# game engine. called by /scripts/, interacts with all other functions
 def start_game(game):
-    # unpacking game variables
     game_rule, expressions, results = game
-    # shows greeting, takes username, shows game rule
-    name = greet_user(game_rule)
-    for count in range(3):
-        # gets one expression and shows user
-        show_question(expressions[count])
-        answer = get_user_answer()
-        # gets result that matches the expression
-        result = str(results[count])
-        # checks if the user's answer and result match
-        correct = is_correct(answer, result)
+    name = get_user_name_and_welcome_him(game_rule)
+    for round in range(num_of_rounds):
+        answer = get_user_answer_and_show_question(expressions[round])
+        result = str(results[round])
+        correct = is_correct_check_and_show_to_user(answer, result)
         if not correct:
             show_user_lose(name)
             break

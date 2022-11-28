@@ -1,4 +1,5 @@
 from random import randint
+from brain_games.games_body import num_of_rounds
 
 
 game_rule = 'Answer "yes" if given number is prime. Otherwise answer "no".'
@@ -15,18 +16,16 @@ def get_num_and_result():
     return 'yes', number
 
 
-# generate lists of mathematical expressions and their answers
+# generate lists of questions and their answers
 def get_prime_lists():
     prime_questions_list, prime_results_list = [], []
-    for _ in range(1, 4):
+    for _ in range(num_of_rounds):
         prime_result, numbers = get_num_and_result()
         prime_results_list.append(str(prime_result))
         prime_questions_list.append(numbers)
     return prime_questions_list, prime_results_list
 
 
-# run the create lists function pass its result to the
-# variables that the engine imports
 prime_questions, prime_results = get_prime_lists()
 
 # pack game variables in one for game engine

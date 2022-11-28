@@ -1,13 +1,12 @@
 import random
 from operator import add, sub, mul
 from random import randint
+from brain_games.games_body import num_of_rounds
 
 
 game_rule = 'What is the result of the expression?'
 
 
-# create random numbers and get random operator from dictionary
-# count the result and pass all of this to get_expression
 def get_expression_parts_and_result():
     num1, num2 = randint(1, 25), randint(1, 25)
     operators_dictionary = {
@@ -20,26 +19,23 @@ def get_expression_parts_and_result():
     return num1, num2, operator_, result
 
 
-# create one simple math expression, calculate the result
 def get_expression():
     num1, num2, operator_, result = get_expression_parts_and_result()
     expression = f'{num1} {operator_} {num2}'
     return result, expression
 
 
-# generate lists of mathematical expressions and their answers
+# generate lists of expressions and their answers
 def get_calc_lists():
     questions_calc_list = []
     results_calc_list = []
-    for _ in range(3):
+    for _ in range(num_of_rounds):
         result, expression = get_expression()
         questions_calc_list.append(expression)
         results_calc_list.append(str(result))
     return questions_calc_list, results_calc_list
 
 
-# run the create lists function pass its result to the
-# variables that the engine imports
 calc_questions, calc_results = get_calc_lists()
 
 # pack game variables in one for game engine

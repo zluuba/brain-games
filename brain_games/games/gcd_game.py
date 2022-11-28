@@ -1,17 +1,16 @@
 from random import randint
+from brain_games.games_body import num_of_rounds
 
 
 game_rule = 'Find the greatest common divisor of given numbers.'
 
 
-# create random numbers
 def get_numbers():
     num1 = randint(1, 25)
     num2 = randint(1, 25)
     return num1, num2
 
 
-# create an expression of gcd that the user will see
 def get_expression():
     num1, num2 = get_numbers()
     expression = f'{num1} {num2}'
@@ -30,19 +29,17 @@ def get_gcd_result():
     return result, expression
 
 
-# generate lists of mathematical expressions and their answers
+# generate lists of expressions and their answers
 def get_gcd_lists():
     questions_gcd_list = []
     results_gcd_list = []
-    for _ in range(3):
+    for _ in range(num_of_rounds):
         result, expression = get_gcd_result()
         questions_gcd_list.append(expression)
         results_gcd_list.append(str(result))
     return questions_gcd_list, results_gcd_list
 
 
-# run the create lists function pass its result to the
-# variables that the engine imports
 gcd_questions, gcd_results = get_gcd_lists()
 
 # pack game variables in one for game engine
