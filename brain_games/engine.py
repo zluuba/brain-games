@@ -15,11 +15,21 @@ def get_user_answer_and_show_question(expression):
     return answer
 
 
-def is_correct(answer, result):
+def is_correct_check_and_show(answer, result):
     if answer == result:
+        print('Correct!')
         return True
     else:
+        print(f"'{answer}' is wrong answer ;(. Correct answer was '{result}'.")
         return False
+
+
+def show_user_win(name):
+    print(f'Congratulations, {name}!')
+
+
+def show_user_lose(name):
+    print(f"Let's try again, {name}!")
 
 
 def start_game(game):
@@ -29,11 +39,9 @@ def start_game(game):
     for _ in range(rounds):
         result, expression = game.get_result_and_expression()
         answer = get_user_answer_and_show_question(expression)
-        correct = is_correct(answer, str(result))
+        correct = is_correct_check_and_show(answer, str(result))
         if not correct:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{result}'.")
-            print(f"Let's try again, {name}!")
+            show_user_lose(name)
             break
-        print('Correct!')
     else:
-        print(f'Congratulations, {name}!')
+        show_user_win(name)
