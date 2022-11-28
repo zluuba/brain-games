@@ -1,12 +1,10 @@
 from random import randint
-from brain_games.games_body import num_of_rounds
 
 
 game_rule = 'What number is missing in the progression?'
 
 
-# creates sequence with one hide number
-def get_progression_result():
+def get_result_and_expression():
     first_num = randint(1, 20)
     step = randint(2, 6)
     list_volume = randint(5, 11)
@@ -24,20 +22,3 @@ def get_progression_result():
     progression_expression = " ".join(map(str, final_progression))
 
     return hide_digit, progression_expression
-
-
-# generate lists of expressions and their answers
-def get_progression_lists():
-    questions_list = []
-    answers_list = []
-    for _ in range(num_of_rounds):
-        result, progression_expression = get_progression_result()
-        questions_list.append(progression_expression)
-        answers_list.append(str(result))
-    return questions_list, answers_list
-
-
-questions, answers = get_progression_lists()
-
-# pack game variables in one for game engine
-progression = game_rule, questions, answers
