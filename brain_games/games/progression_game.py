@@ -29,15 +29,15 @@ def get_progression_result():
 # generate lists of expressions and their answers
 def get_progression_lists():
     questions_list = []
-    results_list = []
+    answers_list = []
     for _ in range(num_of_rounds):
         result, progression_expression = get_progression_result()
         questions_list.append(progression_expression)
-        results_list.append(str(result))
-    return questions_list, results_list
+        answers_list.append(str(result))
+    return questions_list, answers_list
 
 
-questions, results = get_progression_lists()
+questions, answers = get_progression_lists()
 
 # pack game variables in one for game engine
-progression = game_rule, questions, results
+progression = game_rule, questions, answers
