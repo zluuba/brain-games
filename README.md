@@ -22,27 +22,37 @@ make package-install
 
 ### Use these commands for playing:
 
-1. **"Parity Check"** game. Is a number on the screen, you must enter "yes" if the number is even and "no" if it's not.
+#### **"Parity Check"** game
+Is a number on the screen, you must enter "yes" if the number is even and "no" if it's not. <br />
+[Demonstration](https://github.com/zluuba/python-project-49#even-game)
 ```ch
 brain-even
 ```
 
-2. **"Calculator"** game. Is given a mathematical expression, you need to calculate it and enter the result.
+#### **"Calculator"** game
+Is given a mathematical expression, you need to calculate it and enter the result. <br />
+[Demonstration](https://github.com/zluuba/python-project-49#calculator-game)
 ```ch
 brain-calc
 ```
 
-3. **"The Greatest Common Divisor"** game. Two numbers are given, you need to calculate the greatest common divisor and enter the result. [More about GSD](https://en.wikipedia.org/wiki/Greatest_common_divisor)
+#### **"The Greatest Common Divisor"** game
+Two numbers are given, you need to calculate the greatest common divisor and enter the result. [More about GSD](https://en.wikipedia.org/wiki/Greatest_common_divisor) <br />
+[Demonstration](https://github.com/zluuba/python-project-49#greatestcommondivisor-game)
 ```ch
 brain-gcd
 ```
 
-4. **"Arithmetic Progression"** game. Is given an arithmetic sequence in which one number is hidden, you must enter the missing number.
+#### **"Arithmetic Progression"** game
+Is given an arithmetic sequence in which one number is hidden, you must enter the missing number. <br />
+[Demonstration](https://github.com/zluuba/python-project-49#progression-game)
 ```ch
 brain-progression
 ```
 
-5. **"Is it a Simple Number?"** game. Is a number on the screen, you must enter "yes" if the number is prime and "no" if it's not. [More about prime numbers](https://en.wikipedia.org/wiki/Prime_number)
+#### **"Is it a Simple Number?"** game
+Is a number on the screen, you must enter "yes" if the number is prime and "no" if it's not. [More about prime numbers](https://en.wikipedia.org/wiki/Prime_number) <br />
+[Demonstration](https://github.com/zluuba/python-project-49#prime-game)
 ```ch
 brain-prime
 ```
