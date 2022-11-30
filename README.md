@@ -15,6 +15,7 @@ All games are started and played using the terminal. <br />
 ### Installation
 Download full package and install it with these commands:
 ```ch
+make install
 make build
 make package-install
 ```
@@ -75,7 +76,7 @@ brain-prime
 - [prompt](https://prompt.readthedocs.io/en/latest/) package, версия 0.4.1 или выше
 
 ### Как установить и играть
-Скачайте весь пакет и установите его с помощью команды: "make package-install". <br />
+Скачайте весь пакет и установите его с помощью [этих](https://github.com/zluuba/python-project-49#installation) команд. <br />
 После этого игры станут доступны, используйте эти команды:
 1. "**brain-even**" - запускает игру "Проверка на четность". На экран выводится число, нужно ввести "yes", если число четное и "no", если не четное.
 2. "**brain-calc**" - игра "Калькулятор". Даётся математическое выражение, нужно его вычислить и ввести результат.
