@@ -18,7 +18,6 @@ Download full package and install it with these commands:
 make build
 make package-install
 ```
-<hr>
 
 ### Use these commands for playing:
 
@@ -26,32 +25,27 @@ make package-install
 ```ch
 brain-even
 ```
-<hr>
 
 2. **"Calculator"** game. Is given a mathematical expression, you need to calculate it and enter the result.
 ```ch
 brain-calc
 ```
-<hr>
 
 3. **"The Greatest Common Divisor"** game. Two numbers are given, you need to calculate the greatest common divisor and enter the result. [More about GSD](https://en.wikipedia.org/wiki/Greatest_common_divisor)
 ```ch
 brain-gcd
 ```
-<hr>
 
 4. **"Arithmetic Progression"** game. Is given an arithmetic sequence in which one number is hidden, you must enter the missing number.
 ```ch
 brain-progression
 ```
-<hr>
 
 5. **"Is it a Simple Number?"** game. Is a number on the screen, you must enter "yes" if the number is prime and "no" if it's not. [More about prime numbers](https://en.wikipedia.org/wiki/Prime_number)
 ```ch
 brain-prime
 ```
 
-<hr>
 
 ### Install and play. Demos
 
