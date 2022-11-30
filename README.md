@@ -19,9 +19,11 @@ Or you can clone this repo:
 ```ch
 git clone https://github.com/zluuba/python-project-49.git
 ```
-Go to the installed folder in the terminal and using these command to install package:
+Go to the installed folder in the terminal and using these commands to install package:
 ```ch
 make install
+make build
+make package-install
 ```
 
 ### Commands for playing
@@ -98,9 +100,11 @@ brain-prime
 ```ch
 git clone https://github.com/zluuba/python-project-49.git
 ```
-Затем, при помощи терминала нужно перейти в директорию с установленными файлами и установить пакет командой:
+Затем, при помощи терминала нужно перейти в директорию с загруженными файлами и установить пакет с помощью команд:
 ```ch
 make install
+make build
+make package-install
 ```
 
 ### Как играть
