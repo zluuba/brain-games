@@ -3,7 +3,8 @@
 
 
 ### Welcome to the Brain Games
-This project includes five math games: "Parity Check", "Calculator", "Greatest Common Divisor", "Arithmetic Progression" and "Is it a Simple Number?".
+"Brain Games" includes five math games: "Parity Check", "Calculator", "Greatest Common Divisor", "Arithmetic Progression" and "Is it a Simple Number?". <br />
+This is the first project created as part of Python learning.
 All games are started and played using the terminal. <br />
 [Readme на русском языке >>](https://github.com/zluuba/python-project-49#%D0%B8%D0%B3%D1%80%D1%8B-%D1%80%D0%B0%D0%B7%D1%83%D0%BC%D0%B0)
 
@@ -13,14 +14,13 @@ All games are started and played using the terminal. <br />
 - [prompt](https://prompt.readthedocs.io/en/latest/) package, version 0.4.1 or higher
 
 ### Installation
-Download full package and install it with these commands:
+Download full package: press the green button "<> code" and download ZIP-file. Unzip it.
+Go to the installed folder in the terminal and using these command to install games:
 ```ch
 make install
-make build
-make package-install
 ```
 
-### Use these commands for playing:
+### Commands for playing
 
 #### **"Parity Check"** game
 Is a number on the screen, you must enter "yes" if the number is even and "no" if it's not. <br />
@@ -58,7 +58,7 @@ brain-prime
 ```
 
 
-### Install and play. Demos
+### How to play. Demonstration
 
 #### Even Game:
 [![asciicast](https://asciinema.org/a/h6cIIpEGMbiNajL8XJ02GrOPX.svg)](https://asciinema.org/a/h6cIIpEGMbiNajL8XJ02GrOPX)
@@ -86,7 +86,7 @@ brain-prime
 - [prompt](https://prompt.readthedocs.io/en/latest/) package, версия 0.4.1 или выше
 
 ### Как установить и играть
-Скачайте весь пакет и установите его с помощью [этих](https://github.com/zluuba/python-project-49#installation) команд. <br />
+Скачайте весь пакет и установите его с помощью [этой](https://github.com/zluuba/python-project-49#installation) команды. <br />
 После этого игры станут доступны, используйте эти команды:
 1. "**brain-even**" - запускает игру "Проверка на четность". На экран выводится число, нужно ввести "yes", если число четное и "no", если не четное.
 2. "**brain-calc**" - игра "Калькулятор". Даётся математическое выражение, нужно его вычислить и ввести результат.
