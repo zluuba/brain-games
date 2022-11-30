@@ -14,13 +14,18 @@ All games are started and played using the terminal. <br />
 - [prompt](https://prompt.readthedocs.io/en/latest/) package, version 0.4.1 or higher
 
 ### Installation
-Download full package: press the green button "<> code" and download ZIP-file. Unzip it.
-Go to the installed folder in the terminal and using these command to install games:
+Download ZIP-file to your PC and unzip it.
+Or you can clone this repo:
+```ch
+git clone https://github.com/zluuba/python-project-49.git
+```
+Go to the installed folder in the terminal and using these command to install package:
 ```ch
 make install
 ```
 
 ### Commands for playing
+Once the package is installed, to start playing, you should enter any of the commands below.
 
 #### **"Parity Check"** game
 Is a number on the screen, you must enter "yes" if the number is even and "no" if it's not. <br />
@@ -37,7 +42,7 @@ brain-calc
 ```
 
 #### **"The Greatest Common Divisor"** game
-Two numbers are given, you need to calculate the greatest common divisor and enter the result. [More about GSD](https://en.wikipedia.org/wiki/Greatest_common_divisor) <br />
+Two numbers are given, you need find the greatest common divisor and enter the result. [More about GSD](https://en.wikipedia.org/wiki/Greatest_common_divisor) <br />
 [Demonstration](https://github.com/zluuba/python-project-49#greatestcommondivisor-game)
 ```ch
 brain-gcd
@@ -78,7 +83,8 @@ brain-prime
 <hr>
 
 ## Игры Разума
-Этот проект включает в себя пять математических игр: "Проверка на чётность", "Калькулятор", "Наибольший общий делитель", "Арифметическая прогрессия" и "Простое ли число?". Все игры запускаются с помощью терминала.
+"Игры Разума" - это мой первый проект, созданный для начального изучения Python, окружения и Git. Проект включает в себя пять математических игр: "Проверка на чётность", "Калькулятор", "Наибольший общий делитель", "Арифметическая прогрессия" и "Простое ли число?".
+Все игры запускаются с помощью терминала.
 
 ### Минимальные требования
 - [python](https://www.python.org/), версия 3.10 или выше
