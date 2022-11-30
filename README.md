@@ -12,15 +12,44 @@ All games are started and played using the terminal. <br />
 - [poetry](https://python-poetry.org/), version 1.0.0 or higher
 - [prompt](https://prompt.readthedocs.io/en/latest/) package, version 0.4.1 or higher
 
+### Installation
+Download full package and install it with these commands:
+```ch
+make build
+make package-install
+```
+<hr>
 
-### How to install and play
-Download full package and install it with command: "make package-install". <br />
-Now all games are available on these five commands:
-1. "**brain-even**" - running the "Parity Check" game. Is a number on the screen, you must enter "yes" if the number is even and "no" if it's not.
-2. "**brain-calc**" - "Calculator" game. Is given a mathematical expression, you need to calculate it and enter the result.
-3. "**brain-gcd**" - "The Greatest Common Divisor" game. Two numbers are given, you need to calculate the greatest common divisor and enter the result. [More about GSD](https://en.wikipedia.org/wiki/Greatest_common_divisor)
-4. "**brain-progression**" - "Arithmetic Progression" game. Is given an arithmetic sequence in which one number is hidden, you must enter the missing number.
-5. "**brain-prime**" - "Is it a Simple Number?" game. Is a number on the screen, you must enter "yes" if the number is prime and "no" if it's not. [More about prime numbers](https://en.wikipedia.org/wiki/Prime_number)
+### Use these commands for playing:
+
+1. **"Parity Check"** game. Is a number on the screen, you must enter "yes" if the number is even and "no" if it's not.
+```ch
+brain-even
+```
+<hr>
+
+2. **"Calculator"** game. Is given a mathematical expression, you need to calculate it and enter the result.
+```ch
+brain-calc
+```
+<hr>
+
+3. **"The Greatest Common Divisor"** game. Two numbers are given, you need to calculate the greatest common divisor and enter the result. [More about GSD](https://en.wikipedia.org/wiki/Greatest_common_divisor)
+```ch
+brain-gcd
+```
+<hr>
+
+4. **"Arithmetic Progression"** game. Is given an arithmetic sequence in which one number is hidden, you must enter the missing number.
+```ch
+brain-progression
+```
+<hr>
+
+5. **"Is it a Simple Number?"** game. Is a number on the screen, you must enter "yes" if the number is prime and "no" if it's not. [More about prime numbers](https://en.wikipedia.org/wiki/Prime_number)
+```ch
+brain-prime
+```
 
 <hr>
 
