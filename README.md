@@ -15,9 +15,9 @@ All games are started and played using the terminal. <br />
 
 ### Installation
 Download ZIP-file to your PC and unzip it.
-Or you can download this repo from terminal:
+Or you can clone this repo:
 ```ch
-pip install git+https://github.com/zluuba/python-project-49.git
+git clone https://github.com/zluuba/python-project-49.git
 ```
 Go to the installed folder in the terminal and using these commands to install package:
 ```ch
@@ -96,9 +96,9 @@ brain-prime
 
 ### Установка
 Чтобы установить сборник мини-игр, нужно скачать архив (ZIP-файл) и разархивировать его на своём компьютере.
-Или вы можете скачать этот репозиторий через терминал:
+Или вы можете склонировать этот репозиторий через терминал:
 ```ch
-pip install git+https://github.com/zluuba/python-project-49.git
+git clone https://github.com/zluuba/python-project-49.git
 ```
 Затем, при помощи терминала нужно перейти в директорию с загруженными файлами и установить пакет с помощью команд:
 ```ch
