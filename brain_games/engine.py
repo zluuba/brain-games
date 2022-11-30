@@ -24,11 +24,12 @@ def start_game(game):
     for _ in range(ROUNDS):
         correct_answer, question = game.get_result_and_question()
         user_answer = get_user_answer_and_show_question(question)
-        if user_answer != str(correct_answer):
+        if user_answer == str(correct_answer):
+            print('Correct!')
+        else:
             print(f"'{user_answer}' is wrong answer ;(. "
                   f"Correct answer was '{correct_answer}'.")
             print(f"Let's try again, {user_name}!")
             break
-        print('Correct!')
     else:
         print(f'Congratulations, {user_name}!')
