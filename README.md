@@ -19,6 +19,11 @@ Or you can clone this repo:
 ```ch
 git clone https://github.com/zluuba/python-project-49.git
 ```
+Or download it with pip:
+```
+pip install --user git+https://github.com/zluuba/python-project-49.git
+```
+
 Go to the installed folder in the terminal and using these commands to install package:
 ```ch
 make install
@@ -96,10 +101,15 @@ brain-prime
 
 ### Установка
 Чтобы установить сборник мини-игр, нужно скачать архив (ZIP-файл) и разархивировать его на своём компьютере.
-Или вы можете склонировать этот репозиторий через терминал:
+Или вы можете склонировать репозиторий через терминал:
 ```ch
 git clone https://github.com/zluuba/python-project-49.git
 ```
+Или установить пакет при помощи pip:
+```
+pip install --user git+https://github.com/zluuba/python-project-49.git
+```
+
 Затем, при помощи терминала нужно перейти в директорию с загруженными файлами и установить пакет с помощью команд:
 ```ch
 make install
