@@ -15,13 +15,11 @@ All games are started and played using the terminal. <br />
 
 ### Installation
 Download ZIP-file to your PC and unzip it.
-Or you can clone this repo:
+You can also clone this repo or download it with pip:
 ```ch
-git clone https://github.com/zluuba/python-project-49.git
-```
-Or download it with pip:
-```
-pip install --user git+https://github.com/zluuba/python-project-49.git
+git clone https://github.com/zluuba/python-project-49.git                   # clone repository
+
+pip install --user git+https://github.com/zluuba/python-project-49.git      # download with pip
 ```
 
 Go to the installed folder in the terminal and using these commands to install package:
@@ -43,7 +41,7 @@ brain-even
 
 #### **"Calculator"** game
 Is given a mathematical expression, you need to calculate it and enter the result. <br />
-[Demonstration](https://github.com/zluuba/python-project-49#calculator-game)
+[Demonstration](https://github.com/zluuba/python-project-49#calculator-game-1)
 ```ch
 brain-calc
 ```
@@ -101,13 +99,11 @@ brain-prime
 
 ### Установка
 Чтобы установить сборник мини-игр, нужно скачать архив (ZIP-файл) и разархивировать его на своём компьютере.
-Или вы можете склонировать репозиторий через терминал:
+Также вы можете склонировать этот репозиторий через терминал или скачать пакет при помощи терминала и команды pip:
 ```ch
-git clone https://github.com/zluuba/python-project-49.git
-```
-Или установить пакет при помощи pip:
-```
-pip install --user git+https://github.com/zluuba/python-project-49.git
+git clone https://github.com/zluuba/python-project-49.git                   # клонирование репозитория
+
+pip install --user git+https://github.com/zluuba/python-project-49.git      # скачать пакет с помощью pip
 ```
 
 Затем, при помощи терминала нужно перейти в директорию с загруженными файлами и установить пакет с помощью команд:
@@ -129,7 +125,7 @@ brain-even
 
 #### **"Калькулятор"**
 Даётся математическое выражение, нужно его вычислить и ввести результат. <br />
-[Demonstration](https://github.com/zluuba/python-project-49#calculator-game)
+[Demonstration](https://github.com/zluuba/python-project-49#calculator-game-1)
 ```ch
 brain-calc
 ```
