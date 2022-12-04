@@ -3,8 +3,8 @@
 
 
 ### Welcome to the Brain Games
-"Brain Games" includes five math games: "Parity Check", "Calculator", "Greatest Common Divisor", "Arithmetic Progression" and "Is it a Simple Number?". <br />
-This is the first project created as part of Python learning.
+'Brain Games' includes five math games: 'Parity Check', 'Calculator', 'Greatest Common Divisor', 'Arithmetic Progression' and 'Is it a Simple Number?'. <br />
+This is the **first project** created as part of Python learning.
 All games are started and played using the terminal. <br />
 [Readme на русском языке >>](https://github.com/zluuba/python-project-49#%D0%B8%D0%B3%D1%80%D1%8B-%D1%80%D0%B0%D0%B7%D1%83%D0%BC%D0%B0)
 
@@ -15,10 +15,11 @@ All games are started and played using the terminal. <br />
 
 ### Installation
 Download ZIP-file to your PC and unzip it.
-You can also clone this repo or download it with pip:
+You can also clone this repo or **download it with pip**:
 ```ch
 git clone https://github.com/zluuba/python-project-49.git                   # clone repository
-
+```
+```ch
 pip install --user git+https://github.com/zluuba/python-project-49.git      # download with pip
 ```
 
@@ -102,7 +103,8 @@ brain-prime
 Также вы можете склонировать этот репозиторий через терминал или скачать пакет при помощи терминала и команды pip:
 ```ch
 git clone https://github.com/zluuba/python-project-49.git                   # клонирование репозитория
-
+```
+```ch
 pip install --user git+https://github.com/zluuba/python-project-49.git      # скачать пакет с помощью pip
 ```
 
