@@ -4,15 +4,15 @@ from random import randint
 game_rule = 'What number is missing in the progression?'
 
 
-def get_answer_and_question():
-    lenght, progression = get_progression()
+def get_question_and_answer():
+    progression, lenght = get_progression()
 
     hide_char_index = randint(0, lenght - 1)
     right_answer = str(progression[hide_char_index])
     progression[hide_char_index] = '..'
 
     question = " ".join(map(str, progression))
-    return right_answer, question
+    return question, right_answer
 
 
 def get_progression():
@@ -21,4 +21,4 @@ def get_progression():
     step = randint(2, 6)
     stop = start + (lenght * step)
     progression = list(range(start, stop, step))
-    return lenght, progression
+    return progression, lenght
