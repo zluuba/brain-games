@@ -22,7 +22,7 @@ def start_game(game):
     game_rule = game.game_rule
     user_name = get_user_name_and_show_welcome(game_rule)
     for _ in range(ROUNDS):
-        right_answer, question = game.get_answer_and_question()
+        question, right_answer = game.get_question_and_answer()
         user_answer = get_user_answer_and_show_question(question)
         if user_answer == str(right_answer):
             print('Correct!')
