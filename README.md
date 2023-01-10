@@ -46,7 +46,7 @@ brain-calc
 ```
 
 #### **"The Greatest Common Divisor"** game
-Two numbers are given, you need find the greatest common divisor and enter the result. [More about GSD](https://en.wikipedia.org/wiki/Greatest_common_divisor) <br />
+Two numbers are given, you need find the greatest common divisor and enter the result [(about GSD)](https://en.wikipedia.org/wiki/Greatest_common_divisor) <br />
 [Demonstration](https://github.com/zluuba/python-project-49#greatestcommondivisor-game)
 ```ch
 brain-gcd
@@ -60,14 +60,14 @@ brain-progression
 ```
 
 #### **"Is it a Simple Number?"** game
-Is a number on the screen, you must enter "yes" if the number is prime and "no" if it's not. [More about prime numbers](https://en.wikipedia.org/wiki/Prime_number) <br />
+Is a number on the screen, you must enter "yes" if the number is prime and "no" if it's not [(about prime numbers)](https://en.wikipedia.org/wiki/Prime_number) <br />
 [Demonstration](https://github.com/zluuba/python-project-49#prime-game)
 ```ch
 brain-prime
 ```
 
 
-### How to play. Demonstration
+### Demos
 
 #### Even Game:
 [![asciicast](https://asciinema.org/a/h6cIIpEGMbiNajL8XJ02GrOPX.svg)](https://asciinema.org/a/h6cIIpEGMbiNajL8XJ02GrOPX)
