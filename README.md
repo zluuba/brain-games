@@ -16,10 +16,10 @@ All games are started and played using the terminal. <br />
 ### Installation
 Clone this repo or download it with pip:
 ```ch
-git clone https://github.com/zluuba/python-project-49.git
+git clone https://github.com/zluuba/brain-games.git
 ```
 ```ch
-pip install --user git+https://github.com/zluuba/python-project-49.git
+pip install --user git+https://github.com/zluuba/brain-games.git
 ```
 
 Use these commands to install package:
