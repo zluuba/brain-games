@@ -83,6 +83,3 @@ brain-prime
 
 #### Prime Game:
 [![asciicast](https://asciinema.org/a/rELtozb3KeYL1sz5XDkqLyZhv.svg)](https://asciinema.org/a/rELtozb3KeYL1sz5XDkqLyZhv)
-
-
-##### From [Hexlet](https://hexlet.io/my) student with love :› <br />
