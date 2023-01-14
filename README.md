@@ -3,12 +3,12 @@
 
 
 ### Welcome to the Brain Games
-'Brain Games' includes five math games: 'Parity Check', 'Calculator', 'Greatest Common Divisor', 'Arithmetic Progression' and 'Is it a Simple Number?'. <br />
+Brain Games includes five math games: 'Parity Check', 'Calculator', 'Greatest Common Divisor', 'Arithmetic Progression' and 'Is it a Simple Number?'. <br />
 All games are started and played using the terminal. <br />
 
 
 ### Requirements
-- [python](https://www.python.org/), version 3.10 or higher
+- [python](https://www.python.org/), version 3.9 or higher
 - [poetry](https://python-poetry.org/), version 1.0.0 or higher
 - [prompt](https://prompt.readthedocs.io/en/latest/) package, version 0.4.1 or higher
 
