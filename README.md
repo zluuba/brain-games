@@ -33,14 +33,14 @@ make package-install
 ### Commands
 
 #### **"Parity Check"** game
-Is a number on the screen, you must enter "yes" if the number is even and "no" if it's not. <br />
+Given a number, you must enter "yes" if the number is even and "no" if it's not. <br />
 [Demonstration](https://github.com/zluuba/python-project-49#even-game)
 ```ch
 brain-even
 ```
 
 #### **"Calculator"** game
-Is given a mathematical expression, you need to calculate it and enter the result. <br />
+Given a mathematical expression, you need to calculate it and enter the result. <br />
 [Demonstration](https://github.com/zluuba/python-project-49#calculator-game-1)
 ```ch
 brain-calc
@@ -54,14 +54,14 @@ brain-gcd
 ```
 
 #### **"Arithmetic Progression"** game
-Is given an arithmetic sequence in which one number is hidden, you must enter the missing number. <br />
+Given an arithmetic sequence in which one number is hidden, you must enter the missing number. <br />
 [Demonstration](https://github.com/zluuba/python-project-49#progression-game)
 ```ch
 brain-progression
 ```
 
 #### **"Is it a Simple Number?"** game
-Is a number on the screen, you must enter "yes" if the number is prime and "no" if it's not [(about prime numbers)](https://en.wikipedia.org/wiki/Prime_number) <br />
+Given a number, you must enter "yes" if the number is prime and "no" if it's not [(about prime numbers)](https://en.wikipedia.org/wiki/Prime_number) <br />
 [Demonstration](https://github.com/zluuba/python-project-49#prime-game)
 ```ch
 brain-prime
