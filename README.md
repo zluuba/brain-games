@@ -1,17 +1,17 @@
-#### Hexlet tests and linter status:
+# Brain Games
+
 [![Actions Status](https://github.com/zluuba/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/zluuba/python-project-49/actions) 
 [![Linter Status](https://github.com/zluuba/brain-games/actions/workflows/linter-check.yml/badge.svg)](https://github.com/zluuba/python-project-50/actions/workflows/pyci.yml) 
 [![Maintainability](https://api.codeclimate.com/v1/badges/8f30055514168a104cb1/maintainability)](https://codeclimate.com/github/zluuba/python-project-49/maintainability) 
 
-### Welcome to the Brain Games
 Brain Games includes five math games: 'Parity Check', 'Calculator', 'Greatest Common Divisor', 'Arithmetic Progression' and 'Is it a Simple Number?'. <br />
+This is the first project on Python, so it's extremely simple :) <br />
 All games are started and played using the terminal. <br />
 
 
 ### Requirements
 - [python](https://www.python.org/), version 3.9 or higher
 - [poetry](https://python-poetry.org/), version 1.0.0 or higher
-- [prompt](https://prompt.readthedocs.io/en/latest/) package, version 0.4.1 or higher
 
 
 ### Installation
@@ -23,7 +23,7 @@ git clone https://github.com/zluuba/brain-games.git
 pip install --user git+https://github.com/zluuba/brain-games.git
 ```
 
-Use these commands to install package:
+Install package and dependencies:
 ```ch
 make install
 make build
