@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = "Brain Games: collection of math games"
+description = "Brain Games, collection of math games"
 license = "Proprietary"
 authors = ["Luybov Nikitina <zluyba.nikitina@gmail.com>"]
 readme = "README.md"
