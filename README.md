@@ -4,7 +4,7 @@
 [![Linter Status](https://github.com/zluuba/brain-games/actions/workflows/linter-check.yml/badge.svg)](https://github.com/zluuba/python-project-50/actions/workflows/pyci.yml) 
 [![Maintainability](https://api.codeclimate.com/v1/badges/8f30055514168a104cb1/maintainability)](https://codeclimate.com/github/zluuba/python-project-49/maintainability) 
 
-Brain Games includes five math games: 'Parity Check', 'Calculator', 'Greatest Common Divisor', 'Arithmetic Progression' and 'Is it a Simple Number?'. <br />
+Brain Games includes five math games: 'Parity Check', 'Calculator', 'Greatest Common Divisor', 'Arithmetic Progression' and 'Is it a Simple Number?'. 
 This is the first project on Python, so it's extremely simple :) <br />
 All games are started and played using the terminal. <br />
 
