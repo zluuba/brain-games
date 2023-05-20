@@ -9,12 +9,12 @@ This is the **first project** on Python, so it's extremely simple :) <br />
 All games are started and played using the terminal. <br />
 
 
-### Requirements
+## Requirements
 - [python](https://www.python.org/), version 3.9 or higher
 - [poetry](https://python-poetry.org/), version 1.0.0 or higher
 
 
-### Installation
+## Installation
 Clone this repo or download it with pip:
 ```ch
 git clone https://github.com/zluuba/brain-games.git
@@ -25,12 +25,13 @@ pip install --user git+https://github.com/zluuba/brain-games.git
 
 Install package and dependencies:
 ```ch
+cd brain-games
 make install
 make build
 make package-install
 ```
 
-### Commands
+## Commands
 
 #### **"Parity Check"** game
 Given a number, you must enter "yes" if the number is even and "no" if it's not. <br />
@@ -68,19 +69,19 @@ brain-prime
 ```
 
 
-### Demos
+## Demos
 
-#### Even Game:
+### Even Game
 [![asciicast](https://asciinema.org/a/h6cIIpEGMbiNajL8XJ02GrOPX.svg)](https://asciinema.org/a/h6cIIpEGMbiNajL8XJ02GrOPX)
 
-#### Calculator Game:
+### Calculator Game
 [![asciicast](https://asciinema.org/a/H00VVTCBDKfmdu3LVuOQPEMza.svg)](https://asciinema.org/a/H00VVTCBDKfmdu3LVuOQPEMza)
 
-#### GreatestCommonDivisor Game:
+### GreatestCommonDivisor Game
 [![asciicast](https://asciinema.org/a/hgcLbeJ0WcWTQIHewflnZrFGQ.svg)](https://asciinema.org/a/hgcLbeJ0WcWTQIHewflnZrFGQ)
 
-#### Progression Game:
+### Progression Game
 [![asciicast](https://asciinema.org/a/PBE94ttXoDZKKZ4EcT5A3vaC7.svg)](https://asciinema.org/a/PBE94ttXoDZKKZ4EcT5A3vaC7)
 
-#### Prime Game:
+### Prime Game
 [![asciicast](https://asciinema.org/a/rELtozb3KeYL1sz5XDkqLyZhv.svg)](https://asciinema.org/a/rELtozb3KeYL1sz5XDkqLyZhv)
