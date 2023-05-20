@@ -1,10 +1,11 @@
+from types import ModuleType
 import prompt
 
 
 ROUNDS = 3
 
 
-def get_user_name_and_show_welcome(game_rule):
+def greet_user_and_get_user_name(game_rule: str) -> str:
     print('Welcome to the Brain Games!')
     user_name = prompt.string("May I have your name? ")
     print(f'Hello, {user_name}!')
@@ -12,18 +13,18 @@ def get_user_name_and_show_welcome(game_rule):
     return user_name
 
 
-def get_user_answer_and_show_question(question):
+def show_question_get_user_answer(question: str) -> str:
     print(f'Question: {question}')
     answer = prompt.string('Your answer: ')
     return answer
 
 
-def start_game(game):
+def start_game(game: ModuleType) -> None:
     game_rule = game.game_rule
-    user_name = get_user_name_and_show_welcome(game_rule)
+    user_name = greet_user_and_get_user_name(game_rule)
     for _ in range(ROUNDS):
         question, right_answer = game.get_question_and_answer()
-        user_answer = get_user_answer_and_show_question(question)
+        user_answer = show_question_get_user_answer(question)
         if user_answer == str(right_answer):
             print('Correct!')
         else:

@@ -1,17 +1,17 @@
+from typing import Tuple
 from random import randint
 
 
 game_rule = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def get_question_and_answer():
+def get_question_and_answer() -> Tuple[int, str]:
     number = randint(2, 100)
-    number_is_prime = is_prime(number)
-    right_answer = 'yes' if number_is_prime else 'no'
+    right_answer = 'yes' if is_prime(number) else 'no'
     return number, right_answer
 
 
-def is_prime(number):
+def is_prime(number) -> bool:
     for divider in range(2, (number // 2) + 1):
         if number % divider == 0:
             return False
