@@ -1,8 +1,10 @@
 # Brain Games
 
 [![Actions Status](https://github.com/zluuba/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/zluuba/python-project-49/actions) 
-[![Linter Status](https://github.com/zluuba/brain-games/actions/workflows/linter-check.yml/badge.svg)](https://github.com/zluuba/python-project-50/actions/workflows/pyci.yml) 
+[![Project Status](https://github.com/zluuba/brain-games/actions/workflows/project-check.yml/badge.svg)](https://github.com/zluuba/brain-games/actions/workflows/project-check.yml) 
 [![Maintainability](https://api.codeclimate.com/v1/badges/8f30055514168a104cb1/maintainability)](https://codeclimate.com/github/zluuba/python-project-49/maintainability) 
+[![Test Coverage](https://api.codeclimate.com/v1/badges/8f30055514168a104cb1/test_coverage)](https://codeclimate.com/github/zluuba/python-project-49/test_coverage)
+
 
 Brain Games includes five math games: 'Parity Check', 'Calculator', 'Greatest Common Divisor', 'Arithmetic Progression' and 'Is it a Simple Number?'. 
 This is the **first project** on Python, so it's extremely simple :) <br />
