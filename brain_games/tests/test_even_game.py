@@ -1,10 +1,7 @@
 from brain_games.games.even import get_question_and_answer
-from random import seed
-
-seed(1)
 
 
-def test_even_question_generation():
+def test_even_question_generation(set_seed):
     question, right_answer = get_question_and_answer()
     assert question == 4
     assert right_answer == 'yes'

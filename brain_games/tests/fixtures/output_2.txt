@@ -1,0 +1,6 @@
+Welcome to the Brain Games!
+Hello, Mark!
+What is the result of the expression?
+Question: 5 + 19
+'44' is wrong answer ;(. Correct answer was '24'.
+Let's try again, Mark!

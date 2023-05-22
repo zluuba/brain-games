@@ -1,10 +1,7 @@
 from brain_games.games.calc import get_question_and_answer
-from random import seed
-
-seed(1)
 
 
-def test_calc_question_generation():
+def test_calc_question_generation(set_seed):
     question, right_answer = get_question_and_answer()
     assert question == '5 + 19'
     assert right_answer == 24

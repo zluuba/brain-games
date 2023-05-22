@@ -1,0 +1,10 @@
+Welcome to the Brain Games!
+Hello, Mark!
+What is the result of the expression?
+Question: 5 + 19
+Correct!
+Question: 9 - 4
+Correct!
+Question: 25 - 15
+Correct!
+Congratulations, Mark!
