@@ -20,4 +20,4 @@ test:
 	poetry run pytest brain_games
 
 test-coverage:
-	poetry run pytest --cov=gendiff --cov-report xml
+	poetry run pytest --cov=brain_games --cov-report xml
