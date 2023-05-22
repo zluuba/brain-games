@@ -38,7 +38,7 @@ make package-install
 
 Type these commands to start the games:
 
-```ch
+```python
 # Parity Check game.
 # Given a number, you must enter "yes" if the number is even and "no" if it's not.
 brain-even
