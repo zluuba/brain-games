@@ -6,9 +6,10 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/8f30055514168a104cb1/test_coverage)](https://codeclimate.com/github/zluuba/python-project-49/test_coverage)
 
 
-Brain Games includes five math games: 'Parity Check', 'Calculator', 'Greatest Common Divisor', 'Arithmetic Progression' and 'Is it a Simple Number?'. 
-This is the **first project** on Python, so it's extremely simple :) <br />
+Brain Games includes five math games: 'Parity Check', 'Calculator', 'Greatest Common Divisor', 'Arithmetic Progression' and 'Prime Numbers'.
 All games are started and played using the terminal. <br />
+
+This is the **first project** on Python, so it's extremely simple. <br />
 
 
 ## Requirements
@@ -35,39 +36,53 @@ make package-install
 
 ## Commands
 
-#### **"Parity Check"** game
-Given a number, you must enter "yes" if the number is even and "no" if it's not. <br />
-[Demonstration](https://github.com/zluuba/python-project-49#even-game)
+Type these commands to start the games:
+
 ```ch
+# Parity Check game.
+# Given a number, you must enter "yes" if the number is even and "no" if it's not.
 brain-even
-```
 
-#### **"Calculator"** game
-Given a mathematical expression, you need to calculate it and enter the result. <br />
-[Demonstration](https://github.com/zluuba/python-project-49#calculator-game-1)
-```ch
+
+# Calculator game
+# Given a mathematical expression, you need to calculate it and enter the result.
 brain-calc
-```
 
-#### **"The Greatest Common Divisor"** game
-Two numbers are given, you need find the greatest common divisor and enter the result [(about GSD)](https://en.wikipedia.org/wiki/Greatest_common_divisor) <br />
-[Demonstration](https://github.com/zluuba/python-project-49#greatestcommondivisor-game)
-```ch
+
+# The Greatest Common Divisor game
+# Two numbers are given, you need find the greatest common divisor and enter the result.
 brain-gcd
-```
 
-#### **"Arithmetic Progression"** game
-Given an arithmetic sequence in which one number is hidden, you must enter the missing number. <br />
-[Demonstration](https://github.com/zluuba/python-project-49#progression-game)
-```ch
+
+# Arithmetic Progression game
+# Given an arithmetic sequence in which one number is hidden, you must enter the missing number.
 brain-progression
+
+
+# Prime Numbers game
+# Given a number, you must enter "yes" if the number is prime and "no" if it's not
+brain-prime
 ```
 
-#### **"Is it a Simple Number?"** game
-Given a number, you must enter "yes" if the number is prime and "no" if it's not [(about prime numbers)](https://en.wikipedia.org/wiki/Prime_number) <br />
-[Demonstration](https://github.com/zluuba/python-project-49#prime-game)
+More about [GSD](https://en.wikipedia.org/wiki/Greatest_common_divisor) and [prime numbers](https://en.wikipedia.org/wiki/Prime_number). <br />
+
+
+## Additional
+
+If you have changed a few lines of code, use these commands to apply all the changes:
 ```ch
-brain-prime
+make build
+make reinstall
+```
+
+To check the current project for compliance with the **PEP8** standards, use this command:
+```ch
+make lint
+```
+
+The next command runs tests and checks the project for correctness:
+```ch
+make test
 ```
 
 
