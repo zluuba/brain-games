@@ -1,11 +1,10 @@
-from typing import Tuple
 from random import randint
 
 
 game_rule = 'Find the greatest common divisor of given numbers.'
 
 
-def get_question_and_answer() -> Tuple[str, int]:
+def get_question_and_answer() -> tuple[str, int]:
     num1 = randint(1, 25)
     num2 = randint(1, 25)
     right_answer = get_gcd(num1, num2)

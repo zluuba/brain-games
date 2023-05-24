@@ -1,5 +1,3 @@
-from typing import Tuple
-
 from operator import add, sub, mul
 from random import randint
 import random
@@ -8,7 +6,7 @@ import random
 game_rule = 'What is the result of the expression?'
 
 
-def get_question_and_answer() -> Tuple[str, int]:
+def get_question_and_answer() -> tuple[str, int]:
     num1, num2 = randint(1, 25), randint(1, 25)
     operators_dictionary = {
         "+": add(num1, num2),
