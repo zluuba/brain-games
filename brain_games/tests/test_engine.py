@@ -2,14 +2,14 @@ from brain_games.games import calc
 from brain_games.engine import start_game
 
 
-def user_inputs(inputs):
+def get_user_inputs(inputs):
     for elem in inputs:
         yield elem
 
 
 def test_engine_win(monkeypatch, capsys, set_seed, input_win, output_win):
     with monkeypatch.context() as m:
-        answers = user_inputs(input_win)
+        answers = get_user_inputs(input_win)
         m.setattr('builtins.input', lambda _: next(answers))
         assert not start_game(calc)
 
@@ -19,7 +19,7 @@ def test_engine_win(monkeypatch, capsys, set_seed, input_win, output_win):
 
 def test_engine_loss(monkeypatch, capsys, set_seed, input_loss, output_loss):
     with monkeypatch.context() as m:
-        answers = user_inputs(input_loss)
+        answers = get_user_inputs(input_loss)
         m.setattr('builtins.input', lambda _: next(answers))
         assert not start_game(calc)
 
