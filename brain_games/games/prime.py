@@ -10,7 +10,7 @@ def get_question_and_answer() -> tuple[int, str]:
     return number, right_answer
 
 
-def is_prime(number) -> bool:
+def is_prime(number: int) -> bool:
     for divider in range(2, (number // 2) + 1):
         if number % divider == 0:
             return False
